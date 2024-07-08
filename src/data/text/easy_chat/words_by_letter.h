@@ -1,0 +1,4 @@
+#ifndef DATA_TEXT_EASY_CHAT_WORDS_BY_LETTER
+#define DATA_TEXT_EASY_CHAT_WORDS_BY_LETTER
+#include "words_by_letter_en.h"
+#endif // DATA_TEXT_EASY_CHAT_WORDS_BY_LETTER
