@@ -1,6 +1,7 @@
 #include "global.h"
 #include "battle.h"
 #include "battle_anim_special.h"
+#include "constants/moves.h"
 #include "contest.h"
 #include "data2.h"
 #include "daycare.h"
@@ -150,6 +151,8 @@ extern const u16 gUnknown_08E94550[];
 extern const u16 gUnknown_08E94590[];
 extern const u8 gUnknown_08E73E88[];
 
+extern bool8 haveMarkingsBeenLoaded;
+
 EWRAM_DATA u8 gUnknown_020384F0 = 0;
 EWRAM_DATA struct Sprite *gUnknown_020384F4 = NULL;
 
@@ -266,6 +269,18 @@ static const union AnimCmd sSpriteAnim_TypeDark[] = {
     ANIMCMD_FRAME(TYPE_DARK * 8, 0, FALSE, FALSE),
     ANIMCMD_END
 };
+static const union AnimCmd sSpriteAnim_TypeFairy[] = {
+    ANIMCMD_FRAME(TYPE_FAIRY * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeEter[] = {
+    ANIMCMD_FRAME(TYPE_ETER * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeLight[] = {
+    ANIMCMD_FRAME(TYPE_LIGHT * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
 static const union AnimCmd sSpriteAnim_CategoryCool[] = {
     ANIMCMD_FRAME((CONTEST_CATEGORY_COOL + NUMBER_OF_MON_TYPES) * 8, 0, FALSE, FALSE),
     ANIMCMD_END
@@ -306,6 +321,9 @@ static const union AnimCmd *const sSpriteAnimTable_MoveTypes[NUMBER_OF_MON_TYPES
     sSpriteAnim_TypeIce,
     sSpriteAnim_TypeDragon,
     sSpriteAnim_TypeDark,
+	sSpriteAnim_TypeFairy,
+	sSpriteAnim_TypeEter,
+	sSpriteAnim_TypeLight,	
     sSpriteAnim_CategoryCool,
     sSpriteAnim_CategoryBeauty,
     sSpriteAnim_CategoryCute,
@@ -351,6 +369,9 @@ static const u8 sMoveTypeToOamPaletteNum[NUMBER_OF_MON_TYPES + CONTEST_CATEGORIE
     [TYPE_ICE] = 14,
     [TYPE_DRAGON] = 15,
     [TYPE_DARK] = 13,
+	[TYPE_FAIRY] = 14,
+    [TYPE_ETER] = 15,
+    [TYPE_LIGHT] = 13,
     [NUMBER_OF_MON_TYPES + CONTEST_CATEGORY_COOL] = 13,
     [NUMBER_OF_MON_TYPES + CONTEST_CATEGORY_BEAUTY] = 14,
     [NUMBER_OF_MON_TYPES + CONTEST_CATEGORY_CUTE] = 14,
@@ -593,8 +614,8 @@ void ShowPokemonSummaryScreen(struct Pokemon *party, u8 monIndex, u8 maxMonIndex
     {
     case PSS_MODE_NORMAL:
     case PSS_MODE_PC_NORMAL:
-        pssData.firstPage = PSS_PAGE_INFO;
-        pssData.lastPage = PSS_PAGE_CONTEST_MOVES;
+        pssData.firstPage = PSS_PAGE_INFO;//Los cambios de abajo son para quitar la pagina contest mode
+        pssData.lastPage = PSS_PAGE_BATTLE_MOVES;//PSS_PAGE_CONTEST_MOVES;
         pssData.unk77 = 0;
         pssData.unk78 = 0;
         pssData.headerTextId = 1;
@@ -602,7 +623,7 @@ void ShowPokemonSummaryScreen(struct Pokemon *party, u8 monIndex, u8 maxMonIndex
         break;
     case PSS_MODE_NO_MOVE_ORDER_EDIT:
         pssData.firstPage = PSS_PAGE_INFO;
-        pssData.lastPage = PSS_PAGE_CONTEST_MOVES;
+        pssData.lastPage = PSS_PAGE_BATTLE_MOVES;//PSS_PAGE_CONTEST_MOVES;
         pssData.unk77 = 0;
         pssData.unk78 = 0;
         pssData.headerTextId = 1;
@@ -611,7 +632,7 @@ void ShowPokemonSummaryScreen(struct Pokemon *party, u8 monIndex, u8 maxMonIndex
         break;
     case PSS_MODE_SELECT_MOVE:
         pssData.firstPage = PSS_PAGE_BATTLE_MOVES;
-        pssData.lastPage = PSS_PAGE_CONTEST_MOVES;
+        pssData.lastPage = PSS_PAGE_BATTLE_MOVES;//PSS_PAGE_CONTEST_MOVES;
         pssData.unk77 = 1;
         pssData.unk78 = 1;
         pssData.headerTextId = 3;
@@ -621,7 +642,7 @@ void ShowPokemonSummaryScreen(struct Pokemon *party, u8 monIndex, u8 maxMonIndex
     case PSS_MODE_MOVES_ONLY:
     case PSS_MODE_PC_MOVES_ONLY:
         pssData.firstPage = PSS_PAGE_BATTLE_MOVES;
-        pssData.lastPage = PSS_PAGE_CONTEST_MOVES;
+        pssData.lastPage = PSS_PAGE_BATTLE_MOVES;//PSS_PAGE_CONTEST_MOVES;
         pssData.unk77 = 1;
         pssData.unk78 = 1;
         break;
@@ -908,6 +929,7 @@ static void SummaryScreenExit(u8 taskId)
 {
     PlaySE(SE_SELECT);
     BeginNormalPaletteFade(0xFFFFFFFF, 0, 0, 16, RGB(0, 0, 0));
+	haveMarkingsBeenLoaded = FALSE;
     gTasks[taskId].func = SummaryScreen_DestroyTask;
 }
 
@@ -2579,7 +2601,7 @@ static void sub_80A015C(struct Pokemon *mon)
             if (pssData.page == PSS_PAGE_BATTLE_MOVES)
                 SummaryScreen_DrawTypeIcon(gBattleMoves[move].type, 87, ((2 * i) + 4) * 8, i);
             else
-                SummaryScreen_DrawTypeIcon(gContestMoves[move].contestCategory + 18, 87, ((2 * i) + 4) * 8, i);
+                SummaryScreen_DrawTypeIcon(gContestMoves[move].contestCategory + 21, 87, ((2 * i) + 4) * 8, i);
 
             SummaryScreen_PrintColoredText(gMoveNames[move], 13, 15, (2 * i) + 4);
             SummaryScreen_PlaceTextTile_White(1, 24, (2 * i) + 4);
@@ -2613,7 +2635,7 @@ static void sub_80A029C(struct Pokemon *mon)
     if (pssData.page == PSS_PAGE_BATTLE_MOVES)
         SummaryScreen_DrawTypeIcon(gBattleMoves[move].type, 87, 96, 4);
     else
-        SummaryScreen_DrawTypeIcon(gContestMoves[move].contestCategory + 18, 87, 96, 4);
+        SummaryScreen_DrawTypeIcon(gContestMoves[move].contestCategory + 21, 87, 96, 4);
 
     if (pssData.page == PSS_PAGE_BATTLE_MOVES)
         SummaryScreen_PrintColoredText(gMoveNames[move], 10, 15, 12);
@@ -2973,10 +2995,15 @@ static void PokemonSummaryScreen_PrintTrainerMemo(struct Pokemon *mon, u8 left, 
     u8 *ptr = gStringVar4;
     u8 nature = GetNature(mon);
 
-    ptr = SummaryScreen_CopyColoredString(ptr, gNatureNames[nature], 14);
-    if (nature != NATURE_BOLD && nature != NATURE_GENTLE)
-        ptr = StringCopy(ptr, gOtherText_Terminator4);
-    ptr = StringCopy(ptr, gOtherText_Nature);
+    //ptr = SummaryScreen_CopyColoredString(ptr, gNatureNames[nature], 14);
+    //if (nature != NATURE_BOLD && nature != NATURE_GENTLE)
+    //    ptr = StringCopy(ptr, gOtherText_Terminator4);
+    //ptr = StringCopy(ptr, gOtherText_Nature);
+	
+	ptr = StringCopy(ptr, gOtherText_Nature);
+	ptr = SummaryScreen_CopyColoredString(ptr, gNatureNames[nature], 14);
+	ptr = StringCopy(ptr, gOtherText_Comma);
+	ptr = StringCopy(ptr, gOtherText_Terminator4);
 
     if (PokemonSummaryScreen_CheckOT(mon) == TRUE)
     {
@@ -4894,6 +4921,7 @@ static void sub_80A1DCC(struct Pokemon *mon)
 {
     DestroySprite(gUnknown_020384F4);
     sub_80A1D84(mon);
+	haveMarkingsBeenLoaded = TRUE;
 }
 
 static void sub_80A1DE8(struct Pokemon *mon)

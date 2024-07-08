@@ -1167,17 +1167,20 @@ static const struct UnknownStruct2 gUnknown_083B59C8[] =
     {DexText_Terminator5, gTypeNames[TYPE_ICE]},
     {DexText_Terminator5, gTypeNames[TYPE_DRAGON]},
     {DexText_Terminator5, gTypeNames[TYPE_DARK]},
+	{DexText_Terminator5, gTypeNames[TYPE_FAIRY]},
+	{DexText_Terminator5, gTypeNames[TYPE_ETER]},
+	{DexText_Terminator5, gTypeNames[TYPE_LIGHT]},
     {NULL, NULL},
 };
 static const u8 gUnknown_083B5A60[] = {0, 1};
 static const u8 gUnknown_083B5A62[] = {0, 1, 2, 3, 4, 5};
-static const u8 gUnknown_083B5A68[] = {0xFF, 0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17};
+static const u8 gUnknown_083B5A68[] = {0xFF, 0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
 static const struct UnknownStruct1 gUnknown_083B5A7C[] =
 {
     {gUnknown_083B5910,  6,  7, 10},
     {gUnknown_083B5968,  8,  9, 11},
-    {gUnknown_083B59C8, 10, 11, 18},
-    {gUnknown_083B59C8, 12, 13, 18},
+    {gUnknown_083B59C8, 10, 11, 21},
+    {gUnknown_083B59C8, 12, 13, 21},
     {gUnknown_083B58D8,  4,  5,  6},
     {gUnknown_083B58C0,  2,  3,  2},
 };
@@ -4222,6 +4225,7 @@ static void sub_8091304(const u8 *name, u8 left, u8 top)
     sub_8072B80(str, left, top, gDexText_UnknownPoke);
 }
 
+/* sistema imperial en altura y peso pokemon
 void unref_sub_80913A4(u16 a, u8 left, u8 top)
 {
     u8 str[6];
@@ -4257,7 +4261,52 @@ void unref_sub_80913A4(u16 a, u8 left, u8 top)
     str[4] = CHAR_0 + ((a % 1000) % 100) % 10;
     str[5] = EOS;
     Menu_PrintText(str, left, top);
-}
+}*/
+
+//sistema metrico en altura y peso pokemon
+void unref_sub_80913A4(u16 arg0, u8 left, u8 top) {
+    u8 buffer[8];
+    int offset;
+    u8 result;
+
+    u8 r6 = 0;
+    offset = 0;
+
+
+    buffer[r6++] = 0xFC;
+    buffer[r6++] = 0x13;
+    r6++;
+
+    result = (arg0 / 1000);
+    if (result == 0)
+    {
+        offset = 6;
+    }
+    else
+    {
+        buffer[r6++] = result + CHAR_0;
+    }
+
+
+    result = (arg0 % 1000) / 100;
+
+    if (result == 0 && offset != 0)
+    {
+        offset += 6;
+    }
+    else
+    {
+        buffer[r6++] = result + CHAR_0;
+    }
+
+    buffer[r6++] = (((arg0 % 1000) % 100) / 10) + CHAR_0;
+    buffer[r6++] = CHAR_COMMA;
+    buffer[r6++] = (((arg0 % 1000) % 100) % 10) + CHAR_0;
+
+    buffer[r6++] = EOS;
+    buffer[2] = offset;
+    Menu_PrintText(buffer, left, top);
+}//sistema metrico en altura y peso pokemon
 
 
 #ifdef UNITS_IMPERIAL

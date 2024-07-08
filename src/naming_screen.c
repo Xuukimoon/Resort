@@ -548,6 +548,8 @@ static bool8 KeyboardKeyHandler_Character(u8 event)
     if (event == KBEVENT_PRESSED_A)
     {
         u8 var = sub_80B7004();
+		if (namingScreenDataPtr ->currentPage == PAGE_UPPER && GetTextCaretPosition() == 1 )//pasar de mayusculas a minusculas
+            sub_80B61C8();//pasar de mayusculas a minusculas
 
         sub_80B6914();
         if (var)

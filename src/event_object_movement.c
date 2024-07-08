@@ -446,6 +446,13 @@ const struct ReflectionPaletteSet gPlayerReflectionPaletteSets[] = {
     {OBJ_EVENT_PAL_TAG_11, gPlayerUnderwaterReflectionPaletteTags},
     {OBJ_EVENT_PAL_TAG_NONE, NULL},
 };
+//paleta reflejo femenino
+const struct ReflectionPaletteSet gPlayerFemaleReflectionPaletteSets[] = {
+    {OBJ_EVENT_PAL_TAG_8, gUnusedPlayerReflectionPaletteTags},
+    {OBJ_EVENT_PAL_TAG_17, gUnusedPlayerReflectionPaletteTags},
+    {OBJ_EVENT_PAL_TAG_11, gPlayerUnderwaterReflectionPaletteTags},
+    {OBJ_EVENT_PAL_TAG_NONE, NULL},
+};
 
 const u16 gQuintyPlumpReflectionPaletteTags[] = {
     OBJ_EVENT_PAL_TAG_13,
@@ -1919,6 +1926,8 @@ static u8 FindObjectEventPaletteIndexByTag(u16 tag)
 void LoadPlayerObjectReflectionPalette(u16 paletteTag, u8 paletteIndex)
 {
     u8 i;
+	if (gSaveBlock2.playerGender == MALE)//nuevo
+	{	
 
     PatchObjectPalette(paletteTag, paletteIndex);
     for (i = 0; gPlayerReflectionPaletteSets[i].mainPaletteTag != OBJ_EVENT_PAL_TAG_NONE; i++)
@@ -1929,6 +1938,19 @@ void LoadPlayerObjectReflectionPalette(u16 paletteTag, u8 paletteIndex)
             break;
         }
     }
+	}
+	else//nuevo paleta chica
+	{
+		PatchObjectPalette(paletteTag, paletteIndex);
+    for (i = 0; gPlayerFemaleReflectionPaletteSets[i].mainPaletteTag != OBJ_EVENT_PAL_TAG_NONE; i++)
+    {
+        if (gPlayerFemaleReflectionPaletteSets[i].mainPaletteTag == paletteTag)//
+        {
+            PatchObjectPalette(gPlayerFemaleReflectionPaletteSets[i].reflectionPaletteTags[sCurrentReflectionType], gReflectionEffectPaletteMap[paletteIndex]);
+            break;
+        }
+    }
+	}
 }
 
 void LoadSpecialObjectReflectionPalette(u16 paletteTag, u8 paletteIndex)
@@ -7444,7 +7466,7 @@ static u8 ObjectEventCheckForReflectiveSurface(struct ObjectEvent *objEvent)
 
     // ceil div by tile width?
     s16 width = (info->width + 8) >> 4;
-    s16 height = (info->height + 8) >> 4;
+    s16 height = (info->height -16) >> 4;//s16 height = (info->height + 8) >> 4;//aqui hay algo de los tiles (solucion cutre temporal)
     s16 i;
     s16 j;
     u8 result;

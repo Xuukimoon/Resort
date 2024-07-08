@@ -913,9 +913,9 @@ static u8 Bike_CheckCollisionTryAdvanceCollisionCount(struct ObjectEvent *object
     return collision;
 }
 
-bool8 IsRunningDisallowed(u8 tile)
+bool8 IsRunningDisallowed(u8 tile)//correr en interiores
 {
-    if (IsRunningDisallowedByMetatile(tile) != FALSE || gMapHeader.mapType == MAP_TYPE_INDOOR)
+    if (IsRunningDisallowedByMetatile(tile) != FALSE)// || gMapHeader.mapType == MAP_TYPE_INDOOR)
         return TRUE;
     else
         return FALSE;

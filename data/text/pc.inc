@@ -1,17 +1,18 @@
 Text_BootUpPC: @ 81A09EC
-	.string "{PLAYER} booted up the PC.$"
+	.string "{PLAYER} encendió el PC.$"
 
 Text_WhichPCShouldBeAccessed:: @ 81A0A01
-	.string "Which PC should be accessed?$"
+	.string "¿A qué PC quieres acceder?$"
 
 Text_AccessedSomeonesPC: @ 81A0A1E
-	.string "Accessed someone's PC.$"
+	.string "Accedió al PC de alguien.$"
 
 Text_StorageSystemOpened: @ 81A0A35
-	.string "POKéMON Storage System opened.$"
+	.string "Acceso al Sistema de Almacenamiento\n"
+	.string "de Pokémon concedido.$"
 
 Text_AccessedPlayersPC: @ 81A0A54
-	.string "Accessed {PLAYER}'s PC.$"
+	.string "Accedió al PC de {PLAYER}.$"
 
 Text_AccessedLanettesPC: @ 81A0A66
-	.string "Accessed LANETTE's PC.$"
+	.string "Accedió al PC de AREDIA.$"

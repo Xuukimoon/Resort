@@ -1,11 +1,14 @@
 #include "global.h"
 #include "constants/hold_effects.h"
 #include "constants/items.h"
+#include "constants/maps.h"//nuevos metodos evolutivos
 #include "constants/moves.h"
+#include "constants/weather.h"//nuevos metodos evolutivos
 #include "battle.h"
 #include "battle_message.h"
 #include "data2.h"
 #include "event_data.h"
+#include "field_weather.h"//nuevos metodos evolutivos
 #include "item.h"
 #include "link.h"
 #include "m4a.h"
@@ -15,6 +18,7 @@
 #include "pokedex.h"
 #include "random.h"
 #include "overworld.h"
+#include "party_menu.h"//nuevos metodos evolutivos
 #include "rom_8077ABC.h"
 #include "rom_8094928.h"
 #include "rtc.h"
@@ -266,6 +270,7 @@ u8 GetNatureFromPersonality(u32 personality)
 u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 type, u16 evolutionItem)
 {
     int i;
+	int j;//nuevos metodos evolutivos
     u16 targetSpecies = 0;
     u16 species = GetMonData(mon, MON_DATA_SPECIES, 0);
     u16 heldItem = GetMonData(mon, MON_DATA_HELD_ITEM, 0);
@@ -275,6 +280,9 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 type, u16 evolutionItem)
     u8 beauty = GetMonData(mon, MON_DATA_BEAUTY, 0);
     u16 upperPersonality = personality >> 16;
     u8 holdEffect;
+	u8 gender = GetMonGender(mon);//nuevos metodos evolutivos
+    u8 mapGroup = gSaveBlock1.location.mapGroup;//nuevos metodos evolutivos
+    u8 mapNum = gSaveBlock1.location.mapNum;//nuevos metodos evolutivos
 
     if (heldItem == ITEM_ENIGMA_BERRY)
         holdEffect = gSaveBlock1.enigmaBerry.holdEffect;
@@ -343,6 +351,66 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 type, u16 evolutionItem)
                 if (gEvolutionTable[species][i].param <= beauty)
                     targetSpecies = gEvolutionTable[species][i].targetSpecies;
                 break;
+			case EVO_LEVEL_MALE: //inician nuevos metodos evolutivos
+                if (gEvolutionTable[species][i].param <= level && gender == MON_MALE)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+            case EVO_LEVEL_FEMALE:
+                if (gEvolutionTable[species][i].param <= level && gender == MON_FEMALE)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+            case EVO_MOVE:
+                if (pokemon_has_move(&gPlayerParty[i], gEvolutionTable[species][i].param) == TRUE)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+            case EVO_MAPNUM:
+                if (EVO_MAP_GROUP(gEvolutionTable[species][i].param) == mapGroup && EVO_MAP_NUM(gEvolutionTable[species][i].param) == mapNum)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+            case EVO_LEVEL_DAY:
+                RtcCalcLocalTime();
+                if (gLocalTime.hours >= 12 && gLocalTime.hours < 24 && gEvolutionTable[species][i].param <= level)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+            case EVO_LEVEL_NIGHT:
+                RtcCalcLocalTime();
+                if (gLocalTime.hours >= 0 && gLocalTime.hours < 12 && gEvolutionTable[species][i].param <= level)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+            case EVO_ITEM_DAY:
+                RtcCalcLocalTime();
+                if (gLocalTime.hours >= 12 && gLocalTime.hours < 24 && gEvolutionTable[species][i].param == heldItem)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+            case EVO_ITEM_NIGHT:
+                RtcCalcLocalTime();
+                if (gLocalTime.hours >= 0 && gLocalTime.hours < 12 && gEvolutionTable[species][i].param == heldItem)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+            case EVO_LEVEL_MON:
+                for (j = 0; j < PARTY_SIZE; j++)
+				{
+                    u16 checkSpecies = GetMonData(&gPlayerParty[j], MON_DATA_SPECIES, NULL);
+                    if (checkSpecies == gEvolutionTable[species][i].param)
+                        targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                }	
+                break;
+            case EVO_LEVEL_DARK:
+                for (j = 0; j < PARTY_SIZE; j++)
+                {
+                    u16 checkType1 = gBaseStats[GetMonData(&gPlayerParty[j], MON_DATA_SPECIES, NULL)].type1;
+                    u16 checkType2 = gBaseStats[GetMonData(&gPlayerParty[j], MON_DATA_SPECIES, NULL)].type2;
+                    if ((checkType1 == TYPE_DARK || checkType2 == TYPE_DARK) && gEvolutionTable[species][i].param <= level  && i != j) // i != j because pancham can't evolve itself
+                        targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                }	
+                break;
+            case EVO_LEVEL_RAIN:
+                if ((GetCurrentWeather() == WEATHER_RAIN_LIGHT
+                    || GetCurrentWeather() == WEATHER_RAIN_MED
+                    || GetCurrentWeather() == WEATHER_RAIN_HEAVY)
+                    && gEvolutionTable[species][i].param <= level)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;//terminan nuevos metodos evolutivos	
             }
         }
         break;
@@ -367,10 +435,14 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 type, u16 evolutionItem)
         break;
     case 2:
     case 3:
+		RtcCalcLocalTime();//nuevos metodos evolutivos
         for (i = 0; i < 5; i++)
         {
-            if (gEvolutionTable[species][i].method == EVO_ITEM
-             && gEvolutionTable[species][i].param == evolutionItem)
+            //if (gEvolutionTable[species][i].method == EVO_ITEM
+            // && gEvolutionTable[species][i].param == evolutionItem)
+			if ((gEvolutionTable[species][i].method == EVO_ITEM && gEvolutionTable[species][i].param == evolutionItem)//nuevos metodos evolutivos
+             || (gEvolutionTable[species][i].method == EVO_ITEM_MALE && gEvolutionTable[species][i].param == evolutionItem && gender == MON_MALE)//nuevos metodos evolutivos
+             || (gEvolutionTable[species][i].method == EVO_ITEM_FEMALE && gEvolutionTable[species][i].param == evolutionItem && gender == MON_FEMALE))//nuevos metodos evolutivos
             {
                 targetSpecies = gEvolutionTable[species][i].targetSpecies;
                 break;
@@ -1010,22 +1082,22 @@ u8 GetMoveTutorMoves(struct Pokemon *mon, u16 *moves)
     {
         u16 moveLevel;
 
-        if (gLevelUpLearnsets[species][i] == 0xFFFF)
+        if (gLevelUpLearnsets[species][i] == LEVEL_UP_END)//if (gLevelUpLearnsets[species][i] == 0xFFFF)
             break;
 
-        moveLevel = gLevelUpLearnsets[species][i] & 0xFE00;
-        if (moveLevel <= (level << 9))
+        moveLevel = (u8)((gLevelUpLearnsets[species][i] & 0xFF0000) >> 16);//moveLevel = gLevelUpLearnsets[species][i] & 0xFE00;
+        if (moveLevel <= level)//if (moveLevel <= (level << 9))
         {
-            for (j = 0; j < 4 && knownMoves[j] != (gLevelUpLearnsets[species][i] & 0x1FF); j++)
+            for (j = 0; j < 4 && knownMoves[j] != (gLevelUpLearnsets[species][i] & 0x00FFFF); j++)//for (j = 0; j < 4 && knownMoves[j] != (gLevelUpLearnsets[species][i] & 0x1FF); j++)
                 ;
 
             if (j == 4)
             {
-                for (k = 0; k < numMoves && moves[k] != (gLevelUpLearnsets[species][i] & 0x1FF); k++)
+                for (k = 0; k < numMoves && moves[k] != (gLevelUpLearnsets[species][i] & 0x00FFFF); k++)//for (k = 0; k < numMoves && moves[k] != (gLevelUpLearnsets[species][i] & 0x1FF); k++)
                     ;
 
                 if (k == numMoves)
-                    moves[numMoves++] = gLevelUpLearnsets[species][i] & 0x1FF;
+                    moves[numMoves++] = gLevelUpLearnsets[species][i] & 0x00FFFF;//moves[numMoves++] = gLevelUpLearnsets[species][i] & 0x1FF;
             }
         }
     }
@@ -1038,8 +1110,8 @@ u8 GetLevelUpMovesBySpecies(u16 species, u16 *moves)
     u8 numMoves = 0;
     int i;
 
-    for (i = 0; i < 20 && gLevelUpLearnsets[species][i] != 0xFFFF; i++)
-         moves[numMoves++] = gLevelUpLearnsets[species][i] & 0x1FF;
+    for (i = 0; i < MAX_MOVES_PER_LEARNSET && gLevelUpLearnsets[species][i] != LEVEL_UP_END; i++)//for (i = 0; i < 20 && gLevelUpLearnsets[species][i] != 0xFFFF; i++)
+         moves[numMoves++] = (u16)(gLevelUpLearnsets[species][i] & 0x00FFFF);//moves[numMoves++] = gLevelUpLearnsets[species][i] & 0x1FF;
 
      return numMoves;
 }
@@ -1059,27 +1131,27 @@ u8 sub_8040574(struct Pokemon *mon)
     for (i = 0; i < 4; i++)
         learnedMoves[i] = GetMonData(mon, MON_DATA_MOVE1 + i, 0);
 
-    for (i = 0; i < 20; i++)
+    for (i = 0; i < MAX_MOVES_PER_LEARNSET; i++)//for (i = 0; i < 20; i++)
     {
         u16 moveLevel;
 
-        if (gLevelUpLearnsets[species][i] == 0xFFFF)
+        if (gLevelUpLearnsets[species][i] == LEVEL_UP_END)//if (gLevelUpLearnsets[species][i] == 0xFFFF)
             break;
 
-        moveLevel = gLevelUpLearnsets[species][i] & 0xFE00;
+        moveLevel = (u8)((gLevelUpLearnsets[species][i] & 0xFF0000) >> 16);//moveLevel = gLevelUpLearnsets[species][i] & 0xFE00;
 
-        if (moveLevel <= (level << 9))
+         if (moveLevel <= level)//if (moveLevel <= (level << 9))
         {
-            for (j = 0; j < 4 && learnedMoves[j] != (gLevelUpLearnsets[species][i] & 0x1FF); j++)
+            for (j = 0; j < 4 && learnedMoves[j] != (gLevelUpLearnsets[species][i] & 0x00FFFF); j++)//for (j = 0; j < 4 && learnedMoves[j] != (gLevelUpLearnsets[species][i] & 0x1FF); j++)
                 ;
 
             if (j == 4)
             {
-                for (k = 0; k < numMoves && moves[k] != (gLevelUpLearnsets[species][i] & 0x1FF); k++)
+                for (k = 0; k < numMoves && moves[k] != (gLevelUpLearnsets[species][i] & 0x00FFFF); k++)//for (k = 0; k < numMoves && moves[k] != (gLevelUpLearnsets[species][i] & 0x1FF); k++)
                     ;
 
                 if (k == numMoves)
-                    moves[numMoves++] = gLevelUpLearnsets[species][i] & 0x1FF;
+                    moves[numMoves++] = gLevelUpLearnsets[species][i] & 0x00FFFF;//moves[numMoves++] = gLevelUpLearnsets[species][i] & 0x1FF;
             }
         }
     }

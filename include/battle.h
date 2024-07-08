@@ -540,8 +540,8 @@ struct Struct20238C8
         typeArg = gBattleMoves[move].type;                  \
 }
 
-#define IS_TYPE_PHYSICAL(moveType)(moveType < TYPE_MYSTERY)
-#define IS_TYPE_SPECIAL(moveType)(moveType > TYPE_MYSTERY)
+#define IS_TYPE_PHYSICAL(move)(move.physicality == MOVE_PHYSICALITY_PHYSICAL)
+#define IS_TYPE_SPECIAL(move)(move.physicality == MOVE_PHYSICALITY_SPECIAL)
 
 #define TARGET_TURN_DAMAGED (((gSpecialStatuses[gBattlerTarget].physicalDmg || gSpecialStatuses[gBattlerTarget].specialDmg)))
 

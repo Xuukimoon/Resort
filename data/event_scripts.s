@@ -1081,8 +1081,9 @@ RustboroCity_DevonCorp_2F_Text_1A1102:: @ 81A1102
 	.string "Want to give a nickname to the\n"
 	.string "{STR_VAR_2} you received?$"
 
-fieldPoisonText_PokemonFainted:: @ 81A1132
-	.string "{STR_VAR_1} fainted...\p$"
+fieldPoisonText_PokemonFainted:: @ 81A1132 @sobrevivir veneno 1PS
+	.string "{STR_VAR_1} sobrevivió al veneno.\n"
+	.string "¡El veneno se ha desvanecido!\p$"
 
 UnknownString_81A1141: @ 81A1141
 	.string "{PLAYER} is out of useable POKéMON!\p"
@@ -1098,8 +1099,8 @@ SlateportCity_Text_1A116E:: @ 81A116E
 	.string "you good stuff in secrecy.$"
 
 gText_NurseJoy_OkayIllTakeYourPokemon:: @ 81A1245
-	.string "Okay, I'll take your POKéMON for a\n"
-	.string "few seconds.$"
+	.string "Muy bien. Ten un poco de paciencia.\n"
+	.string "Será sólo un momento.$"
 
 gText_NurseJoy_Pokerus:: @ 81A1275
 	.string "Your POKéMON may be infected with\n"

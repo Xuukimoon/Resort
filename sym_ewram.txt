@@ -386,3 +386,7 @@ gUnknown_02039760 = .; /* 2039760 */
     . += 0xC00;
 
 . = ALIGN(4); src/menu_cursor.o(ewram_data);
+
+. = ALIGN(4); src/libs/m4a.o(ewram_data);
+gSoundInfo = .;
+. += 0xfB0;

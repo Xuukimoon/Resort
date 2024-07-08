@@ -316,7 +316,7 @@ static const struct DoorAnimFrame gDoorCloseAnimFrames[] =
     {4, -1},
     {0, 0},
 };
-
+//los ultimos 4 son para puertas 16x16
 const u8 DoorAnimPalettes_830F8A4[] = {1, 1, 1, 1, 1, 1, 1, 1}; // door 00
 const u8 DoorAnimPalettes_830F8AC[] = {1, 1, 1, 1, 1, 1, 1, 1}; // door 01
 const u8 DoorAnimPalettes_830F8B4[] = {5, 5, 5, 5, 5, 5, 5, 5}; // door 02
@@ -353,7 +353,7 @@ const u8 DoorAnimPalettes_830F9A4[] = {9, 9, 9, 9, 9, 9, 9, 9}; // door 32
 const u8 DoorAnimPalettes_830F9AC[] = {7, 7, 7, 7, 7, 7, 7, 7}; // door 33
 
 static const struct DoorGraphics gDoorAnimGraphicsTable[] =
-{
+{//numero de bloque,npi,lo demas
     {0x021, 0, DoorAnimTiles_00, DoorAnimPalettes_830F8A4}, // door 00
     {0x061, 1, DoorAnimTiles_01, DoorAnimPalettes_830F8AC}, // door 01
     {0x1CD, 1, DoorAnimTiles_02, DoorAnimPalettes_830F8B4}, // door 02
@@ -418,7 +418,7 @@ static void DrawCurrentDoorAnimFrame(u32 x, u32 y, const u8 *c)
     u16 arr[8];
 
     door_build_blockdef(arr, 0x3F8, c);
-    DrawDoorMetatileAt(x, y - 1, arr);
+    //DrawDoorMetatileAt(x, y - 1, arr);//puerta a 16x16 si pongo de nuevo pasa a 24x16
     door_build_blockdef(arr, 0x3FC, c + 4);
     DrawDoorMetatileAt(x, y, arr);
 }

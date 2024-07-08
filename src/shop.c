@@ -360,9 +360,10 @@ static void BuyMenuDrawMapMetatile(int var1, int var2, u16 *var3, s32 var4)
     s16 offset1 = var1 * 2;
     s16 offset2 = (var2 * 0x40) + 0x40;
 
-    switch (tempVar4)
+    //switch (tempVar4)
+	if(tempVar4 == 0)//triple metatile
     {
-    case 0:
+    /*case 0:
         BuyMenuDrawMapMetatileLayer(gBGTilemapBuffers[2], offset1, offset2, var3);
         BuyMenuDrawMapMetatileLayer(gBGTilemapBuffers[1], offset1, offset2, var3 + 4);
         break;
@@ -373,9 +374,40 @@ static void BuyMenuDrawMapMetatile(int var1, int var2, u16 *var3, s32 var4)
     case 2:
         BuyMenuDrawMapMetatileLayer(gBGTilemapBuffers[3], offset1, offset2, var3);
         BuyMenuDrawMapMetatileLayer(gBGTilemapBuffers[1], offset1, offset2, var3 + 4);
-        break;
+        break;*/
+		BuyMenuDrawMapMetatileLayer(gBGTilemapBuffers[3], offset1, offset2, var3 + 0);//triple metatile
+		BuyMenuDrawMapMetatileLayer(gBGTilemapBuffers[2], offset1, offset2, var3 + 4);//triple metatile
+		BuyMenuDrawMapMetatileLayer(gBGTilemapBuffers[1], offset1, offset2, var3 + 8);//triple metatile
     }
+	/*else//triple metatile
+    {//triple metatile
+        if(IsMetatileLayerEmpty(var3))//triple metatile
+        {//triple metatile
+            BuyMenuDrawMapMetatileLayer(gBGTilemapBuffers[2], offset1, offset2, var3 + 4);//triple metatile
+            BuyMenuDrawMapMetatileLayer(gBGTilemapBuffers[3], offset1, offset2, var3 + 8);//triple metatile
+        }//triple metatile
+        else if(IsMetatileLayerEmpty(var3 + 4))//triple metatile
+        {//triple metatile
+            BuyMenuDrawMapMetatileLayer(gBGTilemapBuffers[2], offset1, offset2, var3);//triple metatile
+			BuyMenuDrawMapMetatileLayer(gBGTilemapBuffers[3], offset1, offset2, var3 + 8);//triple metatile
+        }//triple metatile
+        else if(IsMetatileLayerEmpty(var3 + 8))//triple metatile
+        {//triple metatile
+            BuyMenuDrawMapMetatileLayer(gBGTilemapBuffers[2], offset1, offset2, var3);//triple metatile
+            BuyMenuDrawMapMetatileLayer(gBGTilemapBuffers[3], offset1, offset2, var3 + 4);//triple metatile
+        }//triple metatile*/
 }
+
+/*static bool8 IsMetatileLayerEmpty(const u16 *var3)//triple metatile
+{//triple metatile
+    u32 i = 0;//triple metatile
+    for(i = 0; i < 4; ++i)//triple metatile
+    {//triple metatile
+        if((var3[i] & 0x3FF) != 0)//triple metatile
+            return FALSE;//triple metatile
+    }//triple metatile
+    return TRUE;//triple metatile
+}//triple metatile*/
 
 // used to draw the border tiles around the viewport.
 static void BuyMenuDrawMapPartialMetatile(s16 var1, int var2, u16 *var3)
@@ -409,16 +441,16 @@ static void Shop_DrawViewportTiles(void)
                 s32 r3 = MapGridGetMetatileLayerTypeAt(facingX + x, facingY + y);
 
                 if (metatileId < 512)
-                    BuyMenuDrawMapMetatile(x, y, (u16 *)gMapHeader.mapLayout->primaryTileset->metatiles + metatileId * 8, r3);
+                    BuyMenuDrawMapMetatile(x, y, (u16 *)gMapHeader.mapLayout->primaryTileset->metatiles + metatileId * 12, r3);//triple metatile(* 8)
                 else
-                    BuyMenuDrawMapMetatile(x, y, (u16 *)gMapHeader.mapLayout->secondaryTileset->metatiles + (metatileId - 512) * 8, r3);
+                    BuyMenuDrawMapMetatile(x, y, (u16 *)gMapHeader.mapLayout->secondaryTileset->metatiles + (metatileId - 512) * 12, r3);//triple metatile(* 8)
             }
             else
             {
                 if (metatileId < 512)
-                    BuyMenuDrawMapPartialMetatile(x, y, (u16 *)gMapHeader.mapLayout->primaryTileset->metatiles + metatileId * 8);
+                    BuyMenuDrawMapPartialMetatile(x, y, (u16 *)gMapHeader.mapLayout->primaryTileset->metatiles + metatileId * 12);//triple metatile(* 8)
                 else
-                    BuyMenuDrawMapPartialMetatile(x, y, (u16 *)gMapHeader.mapLayout->secondaryTileset->metatiles + (metatileId - 512) * 8);
+                    BuyMenuDrawMapPartialMetatile(x, y, (u16 *)gMapHeader.mapLayout->secondaryTileset->metatiles + (metatileId - 512) * 12);//triple metatile(* 8)
             }
 
             if (y == 0 && x != 0 && x != 6)

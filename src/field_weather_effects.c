@@ -1003,7 +1003,7 @@ void sub_807EC40(struct Sprite *sprite)
 
 void sub_807ECEC(struct Sprite *sprite)
 {
-    if (gWeatherPtr->unknown_6E2 > 18)
+    if (gWeatherPtr->unknown_6E2++ > 18)//arreglar nieve if (gWeatherPtr->unknown_6E2 > 18)
     {
         sprite->invisible = FALSE;
         sprite->callback = sub_807ED48;

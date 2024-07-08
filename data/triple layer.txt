@@ -1,0 +1,3 @@
+usar "py triple_layer_converter.py --tsroot tilesets" en cmd
+
+para convertir metatiles a triple layer

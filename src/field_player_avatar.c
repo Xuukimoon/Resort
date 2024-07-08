@@ -1477,6 +1477,7 @@ static void sub_805A2D0(u8 taskId)
         gPlayerAvatar.preventStep = FALSE;
         ScriptContext2_Disable();
         DestroySprite(&gSprites[playerObjEvent->fieldEffectSpriteId]);
+		playerObjEvent->triggerGroundEffectsOnMove = TRUE;//Fix Surfing Dismount Ground Effects Bug
         DestroyTask(taskId);
     }
 }

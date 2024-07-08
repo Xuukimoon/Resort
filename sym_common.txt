@@ -357,7 +357,7 @@ SYMBOL(gUnknown_03005FA0, 48)
 #if DEBUG
 . += 0x10;
 #endif
-SYMBOL(gSoundInfo, 4016)
+//SYMBOL(gSoundInfo, 4016)
 SYMBOL(gPokemonCrySongs, 104)
 SYMBOL(gPokemonCryMusicPlayers, 128)
 SYMBOL(gMPlayJumpTable, 144)

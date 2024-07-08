@@ -27,25 +27,25 @@
 #define REVISION 0
 #endif
 
-#if REVISION == 2 
+//#if REVISION == 2 
 #define BUGFIX_BERRY
-#endif
+//#endif
 
-#if REVISION >= 1 
+//#if REVISION >= 1 
 #define BUGFIX_GLYPHWIDTH
 #define BUGFIX_SAVEFAILEDSCREEN1
-#endif
+//#endif
 
 // European editions of Ruby/Sapphire and all editions of Emerald have this fix.
-//#define BUGFIX_TRAINERAPPROACH
+#define BUGFIX_TRAINERAPPROACH
 
 
-#if REVISION >= 1 
+//#if REVISION >= 1 
 #define BUGFIX_EVO_NAME
-#endif
+//#endif
 
-#define UNITS_IMPERIAL
-//#define UNITS_METRIC
+//#define UNITS_IMPERIAL
+#define UNITS_METRIC//metros y kilos
 
 
 // An option to use translations/encoding fixes for the Debug menus.
@@ -55,7 +55,7 @@
 
 
 // Fixed in Emerald.
-// #define BUGFIX_SETMONIVS
+ #define BUGFIX_SETMONIVS
 
 #if MODERN
 #define UBFIX

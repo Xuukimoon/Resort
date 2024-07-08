@@ -49,7 +49,7 @@ const struct Item gItems[] =
         .secondaryId = 1,
     },
     {
-        .name = _("GREAT BALL"),
+        .name = _("SUPER BALL"),
         .itemId = ITEM_GREAT_BALL,
         .price = 600,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -97,7 +97,7 @@ const struct Item gItems[] =
         .secondaryId = 4,
     },
     {
-        .name = _("NET BALL"),
+        .name = _("MALLA BALL"),
         .itemId = ITEM_NET_BALL,
         .price = 1000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -113,7 +113,7 @@ const struct Item gItems[] =
         .secondaryId = 5,
     },
     {
-        .name = _("DIVE BALL"),
+        .name = _("BUCEO BALL"),
         .itemId = ITEM_DIVE_BALL,
         .price = 1000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -129,7 +129,7 @@ const struct Item gItems[] =
         .secondaryId = 6,
     },
     {
-        .name = _("NEST BALL"),
+        .name = _("NIDO BALL"),
         .itemId = ITEM_NEST_BALL,
         .price = 1000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -145,7 +145,7 @@ const struct Item gItems[] =
         .secondaryId = 7,
     },
     {
-        .name = _("REPEAT BALL"),
+        .name = _("ACOPIO BALL"),
         .itemId = ITEM_REPEAT_BALL,
         .price = 1000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -161,7 +161,7 @@ const struct Item gItems[] =
         .secondaryId = 8,
     },
     {
-        .name = _("TIMER BALL"),
+        .name = _("TURNO BALL"),
         .itemId = ITEM_TIMER_BALL,
         .price = 1000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -177,7 +177,7 @@ const struct Item gItems[] =
         .secondaryId = 9,
     },
     {
-        .name = _("LUXURY BALL"),
+        .name = _("LUJO BALL"),
         .itemId = ITEM_LUXURY_BALL,
         .price = 1000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -193,7 +193,7 @@ const struct Item gItems[] =
         .secondaryId = 10,
     },
     {
-        .name = _("PREMIER BALL"),
+        .name = _("HONOR BALL"),
         .itemId = ITEM_PREMIER_BALL,
         .price = 200,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -209,7 +209,7 @@ const struct Item gItems[] =
         .secondaryId = 11,
     },
     {
-        .name = _("POTION"),
+        .name = _("POCIÓN"),
         .itemId = ITEM_POTION,
         .price = 300,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -225,7 +225,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("ANTIDOTE"),
+        .name = _("ANTÍDOTO"),
         .itemId = ITEM_ANTIDOTE,
         .price = 100,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -241,7 +241,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("BURN HEAL"),
+        .name = _("ANTIQUEMAR"),
         .itemId = ITEM_BURN_HEAL,
         .price = 250,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -257,7 +257,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("ICE HEAL"),
+        .name = _("ANTIHIELO"),
         .itemId = ITEM_ICE_HEAL,
         .price = 250,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -273,7 +273,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("AWAKENING"),
+        .name = _("DESPERTAR"),
         .itemId = ITEM_AWAKENING,
         .price = 250,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -289,7 +289,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("PARLYZ HEAL"),
+        .name = _("ANTIPARALIZ"),
         .itemId = ITEM_PARALYZE_HEAL,
         .price = 200,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -305,7 +305,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("FULL RESTORE"),
+        .name = _("RESTAU. TODO"),
         .itemId = ITEM_FULL_RESTORE,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -321,7 +321,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("MAX POTION"),
+        .name = _("POCIÓN MÁX."),
         .itemId = ITEM_MAX_POTION,
         .price = 2500,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -337,7 +337,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("HYPER POTION"),
+        .name = _("HIPERPOCIÓN"),
         .itemId = ITEM_HYPER_POTION,
         .price = 1200,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -353,7 +353,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("SUPER POTION"),
+        .name = _("SUPERPOCIÓN"),
         .itemId = ITEM_SUPER_POTION,
         .price = 700,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -369,7 +369,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("FULL HEAL"),
+        .name = _("CURA TOTAL"),
         .itemId = ITEM_FULL_HEAL,
         .price = 600,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -385,7 +385,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("REVIVE"),
+        .name = _("REVIVIR"),
         .itemId = ITEM_REVIVE,
         .price = 1500,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -401,7 +401,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("MAX REVIVE"),
+        .name = _("REVIVIR MAX."),
         .itemId = ITEM_MAX_REVIVE,
         .price = 4000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -417,7 +417,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("FRESH WATER"),
+        .name = _("AGUA FRESCA"),
         .itemId = ITEM_FRESH_WATER,
         .price = 200,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -433,7 +433,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("SODA POP"),
+        .name = _("REFRESCO"),
         .itemId = ITEM_SODA_POP,
         .price = 300,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -449,7 +449,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("LEMONADE"),
+        .name = _("LIMONADA"),
         .itemId = ITEM_LEMONADE,
         .price = 350,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -465,7 +465,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("MOOMOO MILK"),
+        .name = _("LECHE MU-MU"),
         .itemId = ITEM_MOOMOO_MILK,
         .price = 500,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -481,7 +481,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("ENERGYPOWDER"),
+        .name = _("POLVOENERGÍA"),
         .itemId = ITEM_ENERGY_POWDER,
         .price = 500,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -497,7 +497,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("ENERGY ROOT"),
+        .name = _("RAÍZ ENERGÍA"),
         .itemId = ITEM_ENERGY_ROOT,
         .price = 800,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -513,7 +513,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("HEAL POWDER"),
+        .name = _("POLVO CURA"),
         .itemId = ITEM_HEAL_POWDER,
         .price = 450,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -529,7 +529,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("REVIVAL HERB"),
+        .name = _("HIERBA REV."),
         .itemId = ITEM_REVIVAL_HERB,
         .price = 2800,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -545,7 +545,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("ETHER"),
+        .name = _("ÉTER"),
         .itemId = ITEM_ETHER,
         .price = 1200,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -561,7 +561,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("MAX ETHER"),
+        .name = _("ÉTER MÁXIMO"),
         .itemId = ITEM_MAX_ETHER,
         .price = 2000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -593,7 +593,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("MAX ELIXIR"),
+        .name = _("ELIXIR MÁX."),
         .itemId = ITEM_MAX_ELIXIR,
         .price = 4500,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -609,7 +609,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("LAVA COOKIE"),
+        .name = _("GALLETA LAVA"),
         .itemId = ITEM_LAVA_COOKIE,
         .price = 200,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -625,7 +625,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("BLUE FLUTE"),
+        .name = _("FLAUTA AZUL"),
         .itemId = ITEM_BLUE_FLUTE,
         .price = 100,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -641,7 +641,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("YELLOW FLUTE"),
+        .name = _("FLAUTA AMAR."),
         .itemId = ITEM_YELLOW_FLUTE,
         .price = 200,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -657,7 +657,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("RED FLUTE"),
+        .name = _("FLAUTA ROJA"),
         .itemId = ITEM_RED_FLUTE,
         .price = 300,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -673,7 +673,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("BLACK FLUTE"),
+        .name = _("FLAUTA NEGRA"),
         .itemId = ITEM_BLACK_FLUTE,
         .price = 400,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -689,7 +689,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("WHITE FLUTE"),
+        .name = _("FLAUTA BLAN."),
         .itemId = ITEM_WHITE_FLUTE,
         .price = 500,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -705,7 +705,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("BERRY JUICE"),
+        .name = _("ZUMO DE BAYA"),
         .itemId = ITEM_BERRY_JUICE,
         .price = 100,
         .holdEffect = HOLD_EFFECT_RESTORE_HP,
@@ -721,7 +721,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("SACRED ASH"),
+        .name = _("CENIZA SAG."),
         .itemId = ITEM_SACRED_ASH,
         .price = 200,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -737,7 +737,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("SHOAL SALT"),
+        .name = _("SAL CARDUMEN"),
         .itemId = ITEM_SHOAL_SALT,
         .price = 20,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -753,7 +753,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("SHOAL SHELL"),
+        .name = _("CONCHA CARD."),
         .itemId = ITEM_SHOAL_SHELL,
         .price = 20,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -769,7 +769,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("RED SHARD"),
+        .name = _("PARTE ROJA"),
         .itemId = ITEM_RED_SHARD,
         .price = 200,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -785,7 +785,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("BLUE SHARD"),
+        .name = _("PARTE AZUL"),
         .itemId = ITEM_BLUE_SHARD,
         .price = 200,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -801,7 +801,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("YELLOW SHARD"),
+        .name = _("PARTE AMAR."),
         .itemId = ITEM_YELLOW_SHARD,
         .price = 200,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -817,7 +817,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("GREEN SHARD"),
+        .name = _("PARTE VERDE"),
         .itemId = ITEM_GREEN_SHARD,
         .price = 200,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1009,7 +1009,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("HP UP"),
+        .name = _("MÁS PS"),
         .itemId = ITEM_HP_UP,
         .price = 9800,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1025,7 +1025,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("PROTEIN"),
+        .name = _("PROTEÍNA"),
         .itemId = ITEM_PROTEIN,
         .price = 9800,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1041,7 +1041,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("IRON"),
+        .name = _("HIERRO"),
         .itemId = ITEM_IRON,
         .price = 9800,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1057,7 +1057,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("CARBOS"),
+        .name = _("CARBURANTE"),
         .itemId = ITEM_CARBOS,
         .price = 9800,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1073,7 +1073,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("CALCIUM"),
+        .name = _("CALCIO"),
         .itemId = ITEM_CALCIUM,
         .price = 9800,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1089,7 +1089,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("RARE CANDY"),
+        .name = _("CARAMELORARO"),
         .itemId = ITEM_RARE_CANDY,
         .price = 4800,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1105,7 +1105,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("PP UP"),
+        .name = _("MÁS PP"),
         .itemId = ITEM_PP_UP,
         .price = 9800,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1137,7 +1137,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("PP MAX"),
+        .name = _("PP MÁXIMOS"),
         .itemId = ITEM_PP_MAX,
         .price = 9800,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1169,7 +1169,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("GUARD SPEC."),
+        .name = _("PROTEC. ESP."),
         .itemId = ITEM_GUARD_SPEC,
         .price = 700,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1185,7 +1185,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("DIRE HIT"),
+        .name = _("DIRECTO"),
         .itemId = ITEM_DIRE_HIT,
         .price = 650,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1201,7 +1201,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("X ATTACK"),
+        .name = _("ATAQUE X"),
         .itemId = ITEM_X_ATTACK,
         .price = 500,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1217,7 +1217,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("X DEFEND"),
+        .name = _("DEFENSA X"),
         .itemId = ITEM_X_DEFEND,
         .price = 550,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1233,7 +1233,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("X SPEED"),
+        .name = _("VELOCIDAD X"),
         .itemId = ITEM_X_SPEED,
         .price = 350,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1249,7 +1249,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("X ACCURACY"),
+        .name = _("PRECISIÓN X"),
         .itemId = ITEM_X_ACCURACY,
         .price = 950,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1265,7 +1265,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("X SPECIAL"),
+        .name = _("DEF. ESP. X"),
         .itemId = ITEM_X_SPECIAL,
         .price = 350,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1281,7 +1281,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("POKé DOLL"),
+        .name = _("POKé MUÑECO"),
         .itemId = ITEM_POKE_DOLL,
         .price = 1000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1297,7 +1297,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("FLUFFY TAIL"),
+        .name = _("COLA SKITTY"),
         .itemId = ITEM_FLUFFY_TAIL,
         .price = 1000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1345,7 +1345,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("MAX REPEL"),
+        .name = _("MÁX. REPEL"),
         .itemId = ITEM_MAX_REPEL,
         .price = 700,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1361,7 +1361,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("ESCAPE ROPE"),
+        .name = _("CUERDA HUIDA"),
         .itemId = ITEM_ESCAPE_ROPE,
         .price = 550,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1377,7 +1377,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("REPEL"),
+        .name = _("REPELENTE"),
         .itemId = ITEM_REPEL,
         .price = 350,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1489,7 +1489,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("SUN STONE"),
+        .name = _("PIEDRA SOLAR"),
         .itemId = ITEM_SUN_STONE,
         .price = 2100,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1505,7 +1505,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("MOON STONE"),
+        .name = _("PIEDRA LUNAR"),
         .itemId = ITEM_MOON_STONE,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1521,7 +1521,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("FIRE STONE"),
+        .name = _("PIEDRA FUEGO"),
         .itemId = ITEM_FIRE_STONE,
         .price = 2100,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1537,7 +1537,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("THUNDERSTONE"),
+        .name = _("PIEDRA TRUENO"),
         .itemId = ITEM_THUNDER_STONE,
         .price = 2100,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1553,7 +1553,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("WATER STONE"),
+        .name = _("PIEDRA AGUA"),
         .itemId = ITEM_WATER_STONE,
         .price = 2100,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1569,7 +1569,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("LEAF STONE"),
+        .name = _("PIEDRA HOJA"),
         .itemId = ITEM_LEAF_STONE,
         .price = 2100,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1649,7 +1649,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TINYMUSHROOM"),
+        .name = _("MINI SETA"),
         .itemId = ITEM_TINY_MUSHROOM,
         .price = 500,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1665,7 +1665,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("BIG MUSHROOM"),
+        .name = _("SETA GRANDE"),
         .itemId = ITEM_BIG_MUSHROOM,
         .price = 5000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1697,7 +1697,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("PEARL"),
+        .name = _("PERLA"),
         .itemId = ITEM_PEARL,
         .price = 1400,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1713,7 +1713,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("BIG PEARL"),
+        .name = _("PERLA GRANDE"),
         .itemId = ITEM_BIG_PEARL,
         .price = 7500,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1729,7 +1729,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("STARDUST"),
+        .name = _("POLVOESTELAR"),
         .itemId = ITEM_STARDUST,
         .price = 2000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1745,7 +1745,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("STAR PIECE"),
+        .name = _("TROZO ESTR."),
         .itemId = ITEM_STAR_PIECE,
         .price = 9800,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1761,7 +1761,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("NUGGET"),
+        .name = _("PEPITA"),
         .itemId = ITEM_NUGGET,
         .price = 10000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1777,7 +1777,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("HEART SCALE"),
+        .name = _("ESC. CORAZÓN"),
         .itemId = ITEM_HEART_SCALE,
         .price = 100,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1937,7 +1937,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("ORANGE MAIL"),
+        .name = _("CARTANARANJA"),
         .itemId = ITEM_ORANGE_MAIL,
         .price = 50,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1953,7 +1953,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("HARBOR MAIL"),
+        .name = _("CARTA PUERTO"),
         .itemId = ITEM_HARBOR_MAIL,
         .price = 50,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1969,7 +1969,7 @@ const struct Item gItems[] =
         .secondaryId = 1,
     },
     {
-        .name = _("GLITTER MAIL"),
+        .name = _("CARTA BRILLO"),
         .itemId = ITEM_GLITTER_MAIL,
         .price = 50,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -1985,7 +1985,7 @@ const struct Item gItems[] =
         .secondaryId = 2,
     },
     {
-        .name = _("MECH MAIL"),
+        .name = _("CARTA IMÁN"),
         .itemId = ITEM_MECH_MAIL,
         .price = 50,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -2001,7 +2001,7 @@ const struct Item gItems[] =
         .secondaryId = 3,
     },
     {
-        .name = _("WOOD MAIL"),
+        .name = _("CARTA MADERA"),
         .itemId = ITEM_WOOD_MAIL,
         .price = 50,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -2017,7 +2017,7 @@ const struct Item gItems[] =
         .secondaryId = 4,
     },
     {
-        .name = _("WAVE MAIL"),
+        .name = _("CARTA OLA"),
         .itemId = ITEM_WAVE_MAIL,
         .price = 50,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -2033,7 +2033,7 @@ const struct Item gItems[] =
         .secondaryId = 5,
     },
     {
-        .name = _("BEAD MAIL"),
+        .name = _("CARTA IMAGEN"),
         .itemId = ITEM_BEAD_MAIL,
         .price = 50,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -2049,7 +2049,7 @@ const struct Item gItems[] =
         .secondaryId = 6,
     },
     {
-        .name = _("SHADOW MAIL"),
+        .name = _("CARTA SOMBRA"),
         .itemId = ITEM_SHADOW_MAIL,
         .price = 50,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -2065,7 +2065,7 @@ const struct Item gItems[] =
         .secondaryId = 7,
     },
     {
-        .name = _("TROPIC MAIL"),
+        .name = _("CARTA TROP."),
         .itemId = ITEM_TROPIC_MAIL,
         .price = 50,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -2081,7 +2081,7 @@ const struct Item gItems[] =
         .secondaryId = 8,
     },
     {
-        .name = _("DREAM MAIL"),
+        .name = _("CARTA SUEÑO"),
         .itemId = ITEM_DREAM_MAIL,
         .price = 50,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -2097,7 +2097,7 @@ const struct Item gItems[] =
         .secondaryId = 9,
     },
     {
-        .name = _("FAB MAIL"),
+        .name = _("CARTA FAB."),
         .itemId = ITEM_FAB_MAIL,
         .price = 50,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -2113,7 +2113,7 @@ const struct Item gItems[] =
         .secondaryId = 10,
     },
     {
-        .name = _("RETRO MAIL"),
+        .name = _("CARTA RETRO"),
         .itemId = ITEM_RETRO_MAIL,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -2129,7 +2129,7 @@ const struct Item gItems[] =
         .secondaryId = 11,
     },
     {
-        .name = _("CHERI BERRY"),
+        .name = _("BAYA ZREZA"),
         .itemId = ITEM_CHERI_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_CURE_PAR,
@@ -2145,7 +2145,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("CHESTO BERRY"),
+        .name = _("BAYA ATANIA"),
         .itemId = ITEM_CHESTO_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_CURE_SLP,
@@ -2161,7 +2161,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("PECHA BERRY"),
+        .name = _("BAYA MELOC"),
         .itemId = ITEM_PECHA_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_CURE_PSN,
@@ -2177,7 +2177,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("RAWST BERRY"),
+        .name = _("BAYA SAFRE"),
         .itemId = ITEM_RAWST_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_CURE_BRN,
@@ -2193,7 +2193,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("ASPEAR BERRY"),
+        .name = _("BAYA PERASI"),
         .itemId = ITEM_ASPEAR_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_CURE_FRZ,
@@ -2209,7 +2209,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("LEPPA BERRY"),
+        .name = _("BAYA ZANAMA"),
         .itemId = ITEM_LEPPA_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_RESTORE_PP,
@@ -2225,7 +2225,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("ORAN BERRY"),
+        .name = _("BAYA ARANJA"),
         .itemId = ITEM_ORAN_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_RESTORE_HP,
@@ -2241,7 +2241,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("PERSIM BERRY"),
+        .name = _("BAYA CAQUIC"),
         .itemId = ITEM_PERSIM_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_CURE_CONFUSION,
@@ -2257,7 +2257,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("LUM BERRY"),
+        .name = _("BAYA ZIUELA"),
         .itemId = ITEM_LUM_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_CURE_STATUS,
@@ -2273,7 +2273,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("SITRUS BERRY"),
+        .name = _("BAYA ZIDRA"),
         .itemId = ITEM_SITRUS_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_RESTORE_HP,
@@ -2289,7 +2289,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("FIGY BERRY"),
+        .name = _("BAYA HIGOG"),
         .itemId = ITEM_FIGY_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_CONFUSE_SPICY,
@@ -2305,7 +2305,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("WIKI BERRY"),
+        .name = _("BAYA WIKI"),
         .itemId = ITEM_WIKI_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_CONFUSE_DRY,
@@ -2321,7 +2321,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("MAGO BERRY"),
+        .name = _("BAYA ANGO"),
         .itemId = ITEM_MAGO_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_CONFUSE_SWEET,
@@ -2337,7 +2337,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("AGUAV BERRY"),
+        .name = _("BAYA GUAYA"),
         .itemId = ITEM_AGUAV_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_CONFUSE_BITTER,
@@ -2353,7 +2353,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("IAPAPA BERRY"),
+        .name = _("BAYA PABAYA"),
         .itemId = ITEM_IAPAPA_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_CONFUSE_SOUR,
@@ -2369,7 +2369,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("RAZZ BERRY"),
+        .name = _("BAYA FRAMBU"),
         .itemId = ITEM_RAZZ_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -2385,7 +2385,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("BLUK BERRY"),
+        .name = _("BAYA ORAM"),
         .itemId = ITEM_BLUK_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -2401,7 +2401,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("NANAB BERRY"),
+        .name = _("BAYA LATANO"),
         .itemId = ITEM_NANAB_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -2417,7 +2417,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("WEPEAR BERRY"),
+        .name = _("BAYA PERAGU"),
         .itemId = ITEM_WEPEAR_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -2433,7 +2433,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("PINAP BERRY"),
+        .name = _("BAYA PINIA"),
         .itemId = ITEM_PINAP_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -2449,7 +2449,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("POMEG BERRY"),
+        .name = _("BAYA GRANA"),
         .itemId = ITEM_POMEG_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -2465,7 +2465,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("KELPSY BERRY"),
+        .name = _("BAYA ALGAMA"),
         .itemId = ITEM_KELPSY_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -2481,7 +2481,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("QUALOT BERRY"),
+        .name = _("BAYA ISPERO"),
         .itemId = ITEM_QUALOT_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -2497,7 +2497,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("HONDEW BERRY"),
+        .name = _("BAYA MELUCE"),
         .itemId = ITEM_HONDEW_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -2513,7 +2513,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("GREPA BERRY"),
+        .name = _("BAYA UVAV"),
         .itemId = ITEM_GREPA_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -2529,7 +2529,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TAMATO BERRY"),
+        .name = _("BAYA TAMATE"),
         .itemId = ITEM_TAMATO_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -2545,7 +2545,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("CORNN BERRY"),
+        .name = _("BAYA MAIS"),
         .itemId = ITEM_CORNN_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -2561,7 +2561,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("MAGOST BERRY"),
+        .name = _("BAYA AOSTAN"),
         .itemId = ITEM_MAGOST_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -2577,7 +2577,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("RABUTA BERRY"),
+        .name = _("BAYA RAUTAN"),
         .itemId = ITEM_RABUTA_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -2593,7 +2593,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("NOMEL BERRY"),
+        .name = _("BAYA MONLI"),
         .itemId = ITEM_NOMEL_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -2609,7 +2609,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("SPELON BERRY"),
+        .name = _("BAYA WIKANO"),
         .itemId = ITEM_SPELON_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -2625,7 +2625,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("PAMTRE BERRY"),
+        .name = _("BAYA PLAMA"),
         .itemId = ITEM_PAMTRE_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -2641,7 +2641,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("WATMEL BERRY"),
+        .name = _("BAYA SAMBIA"),
         .itemId = ITEM_WATMEL_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -2657,7 +2657,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("DURIN BERRY"),
+        .name = _("BAYA RUDION"),
         .itemId = ITEM_DURIN_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -2673,7 +2673,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("BELUE BERRY"),
+        .name = _("BAYA ANDANO"),
         .itemId = ITEM_BELUE_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -2689,7 +2689,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("LIECHI BERRY"),
+        .name = _("BAYA LICHI"),
         .itemId = ITEM_LIECHI_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_ATTACK_UP,
@@ -2705,7 +2705,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("GANLON BERRY"),
+        .name = _("BAYA GONLAN"),
         .itemId = ITEM_GANLON_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_DEFENSE_UP,
@@ -2721,7 +2721,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("SALAC BERRY"),
+        .name = _("BAYA ASLAC"),
         .itemId = ITEM_SALAC_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_SPEED_UP,
@@ -2737,7 +2737,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("PETAYA BERRY"),
+        .name = _("BAYA YAPATI"),
         .itemId = ITEM_PETAYA_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_SP_ATTACK_UP,
@@ -2753,7 +2753,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("APICOT BERRY"),
+        .name = _("BAYA ARICOC"),
         .itemId = ITEM_APICOT_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_SP_DEFENSE_UP,
@@ -2769,7 +2769,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("LANSAT BERRY"),
+        .name = _("BAYA ZONLAN"),
         .itemId = ITEM_LANSAT_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_CRITICAL_UP,
@@ -2785,7 +2785,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("STARF BERRY"),
+        .name = _("BAYA ARABOL"),
         .itemId = ITEM_STARF_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_RANDOM_STAT_UP,
@@ -2801,7 +2801,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("ENIGMA BERRY"),
+        .name = _("BAYA ENIGMA"),
         .itemId = ITEM_ENIGMA_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -2865,7 +2865,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("BRIGHTPOWDER"),
+        .name = _("POLVO BRILLO"),
         .itemId = ITEM_BRIGHT_POWDER,
         .price = 10,
         .holdEffect = HOLD_EFFECT_EVASION_UP,
@@ -2881,7 +2881,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("WHITE HERB"),
+        .name = _("HIER. BLANCA"),
         .itemId = ITEM_WHITE_HERB,
         .price = 100,
         .holdEffect = HOLD_EFFECT_RESTORE_STATS,
@@ -2897,7 +2897,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("MACHO BRACE"),
+        .name = _("BRAZAL FIRME"),
         .itemId = ITEM_MACHO_BRACE,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_MACHO_BRACE,
@@ -2913,7 +2913,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("EXP. SHARE"),
+        .name = _("REPARTIR EXP"),
         .itemId = ITEM_EXP_SHARE,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_EXP_SHARE,
@@ -2929,7 +2929,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("QUICK CLAW"),
+        .name = _("GARRA RÁPIDA"),
         .itemId = ITEM_QUICK_CLAW,
         .price = 100,
         .holdEffect = HOLD_EFFECT_QUICK_CLAW,
@@ -2945,7 +2945,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("SOOTHE BELL"),
+        .name = _("CAMP. ALIVIO"),
         .itemId = ITEM_SOOTHE_BELL,
         .price = 100,
         .holdEffect = HOLD_EFFECT_HAPPINESS_UP,
@@ -2961,7 +2961,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("MENTAL HERB"),
+        .name = _("HIER. MENTAL"),
         .itemId = ITEM_MENTAL_HERB,
         .price = 100,
         .holdEffect = HOLD_EFFECT_CURE_ATTRACT,
@@ -2977,7 +2977,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("CHOICE BAND"),
+        .name = _("CINTAELEGIDA"),
         .itemId = ITEM_CHOICE_BAND,
         .price = 100,
         .holdEffect = HOLD_EFFECT_CHOICE_BAND,
@@ -2993,7 +2993,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("KING'S ROCK"),
+        .name = _("ROCA DEL REY"),
         .itemId = ITEM_KINGS_ROCK,
         .price = 100,
         .holdEffect = HOLD_EFFECT_FLINCH,
@@ -3009,7 +3009,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("SILVERPOWDER"),
+        .name = _("POLVO PLATA"),
         .itemId = ITEM_SILVER_POWDER,
         .price = 100,
         .holdEffect = HOLD_EFFECT_BUG_POWER,
@@ -3025,7 +3025,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("AMULET COIN"),
+        .name = _("MON. AMULETO"),
         .itemId = ITEM_AMULET_COIN,
         .price = 100,
         .holdEffect = HOLD_EFFECT_DOUBLE_PRIZE,
@@ -3041,7 +3041,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("CLEANSE TAG"),
+        .name = _("AMULETO"),
         .itemId = ITEM_CLEANSE_TAG,
         .price = 200,
         .holdEffect = HOLD_EFFECT_REPEL,
@@ -3057,7 +3057,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("SOUL DEW"),
+        .name = _("ROCÍO BONDAD"),
         .itemId = ITEM_SOUL_DEW,
         .price = 200,
         .holdEffect = HOLD_EFFECT_SOUL_DEW,
@@ -3073,7 +3073,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("DEEPSEATOOTH"),
+        .name = _("D. MARINO"),
         .itemId = ITEM_DEEP_SEA_TOOTH,
         .price = 200,
         .holdEffect = HOLD_EFFECT_DEEP_SEA_TOOTH,
@@ -3089,7 +3089,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("DEEPSEASCALE"),
+        .name = _("E. MARINA"),
         .itemId = ITEM_DEEP_SEA_SCALE,
         .price = 200,
         .holdEffect = HOLD_EFFECT_DEEP_SEA_SCALE,
@@ -3105,7 +3105,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("SMOKE BALL"),
+        .name = _("BOLA HUMO"),
         .itemId = ITEM_SMOKE_BALL,
         .price = 200,
         .holdEffect = HOLD_EFFECT_CAN_ALWAYS_RUN,
@@ -3121,7 +3121,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("EVERSTONE"),
+        .name = _("PIEDRAETERNA"),
         .itemId = ITEM_EVERSTONE,
         .price = 200,
         .holdEffect = HOLD_EFFECT_PREVENT_EVOLVE,
@@ -3137,7 +3137,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("FOCUS BAND"),
+        .name = _("CINTA FOCUS"),
         .itemId = ITEM_FOCUS_BAND,
         .price = 200,
         .holdEffect = HOLD_EFFECT_FOCUS_BAND,
@@ -3153,7 +3153,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("LUCKY EGG"),
+        .name = _("HUEVO SUERTE"),
         .itemId = ITEM_LUCKY_EGG,
         .price = 200,
         .holdEffect = HOLD_EFFECT_LUCKY_EGG,
@@ -3169,7 +3169,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("SCOPE LENS"),
+        .name = _("PERISCOPIO"),
         .itemId = ITEM_SCOPE_LENS,
         .price = 200,
         .holdEffect = HOLD_EFFECT_SCOPE_LENS,
@@ -3185,7 +3185,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("METAL COAT"),
+        .name = _("REV.METÁLICO"),
         .itemId = ITEM_METAL_COAT,
         .price = 100,
         .holdEffect = HOLD_EFFECT_STEEL_POWER,
@@ -3201,7 +3201,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("LEFTOVERS"),
+        .name = _("RESTOS"),
         .itemId = ITEM_LEFTOVERS,
         .price = 200,
         .holdEffect = HOLD_EFFECT_LEFTOVERS,
@@ -3217,7 +3217,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("DRAGON SCALE"),
+        .name = _("E. DRAGÓN"),
         .itemId = ITEM_DRAGON_SCALE,
         .price = 2100,
         .holdEffect = HOLD_EFFECT_DRAGON_SCALE,
@@ -3233,7 +3233,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("LIGHT BALL"),
+        .name = _("BOLALUMINOSA"),
         .itemId = ITEM_LIGHT_BALL,
         .price = 100,
         .holdEffect = HOLD_EFFECT_LIGHT_BALL,
@@ -3249,7 +3249,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("SOFT SAND"),
+        .name = _("ARENA FINA"),
         .itemId = ITEM_SOFT_SAND,
         .price = 100,
         .holdEffect = HOLD_EFFECT_GROUND_POWER,
@@ -3265,7 +3265,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("HARD STONE"),
+        .name = _("PIEDRA DURA"),
         .itemId = ITEM_HARD_STONE,
         .price = 100,
         .holdEffect = HOLD_EFFECT_ROCK_POWER,
@@ -3281,7 +3281,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("MIRACLE SEED"),
+        .name = _("SEM. MILAGRO"),
         .itemId = ITEM_MIRACLE_SEED,
         .price = 100,
         .holdEffect = HOLD_EFFECT_GRASS_POWER,
@@ -3297,7 +3297,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("BLACKGLASSES"),
+        .name = _("GAFAS DE SOL"),
         .itemId = ITEM_BLACK_GLASSES,
         .price = 100,
         .holdEffect = HOLD_EFFECT_DARK_POWER,
@@ -3313,7 +3313,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("BLACK BELT"),
+        .name = _("CINT. NEGRO"),
         .itemId = ITEM_BLACK_BELT,
         .price = 100,
         .holdEffect = HOLD_EFFECT_FIGHTING_POWER,
@@ -3329,7 +3329,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("MAGNET"),
+        .name = _("IMÁN"),
         .itemId = ITEM_MAGNET,
         .price = 100,
         .holdEffect = HOLD_EFFECT_ELECTRIC_POWER,
@@ -3345,7 +3345,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("MYSTIC WATER"),
+        .name = _("AGUA MÍSTICA"),
         .itemId = ITEM_MYSTIC_WATER,
         .price = 100,
         .holdEffect = HOLD_EFFECT_WATER_POWER,
@@ -3361,7 +3361,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("SHARP BEAK"),
+        .name = _("PICO AFILADO"),
         .itemId = ITEM_SHARP_BEAK,
         .price = 100,
         .holdEffect = HOLD_EFFECT_FLYING_POWER,
@@ -3377,7 +3377,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("POISON BARB"),
+        .name = _("FLECHA VEN."),
         .itemId = ITEM_POISON_BARB,
         .price = 100,
         .holdEffect = HOLD_EFFECT_POISON_POWER,
@@ -3393,7 +3393,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("NEVERMELTICE"),
+        .name = _("ANTIDERRETIR"),
         .itemId = ITEM_NEVER_MELT_ICE,
         .price = 100,
         .holdEffect = HOLD_EFFECT_ICE_POWER,
@@ -3409,7 +3409,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("SPELL TAG"),
+        .name = _("HECHIZO"),
         .itemId = ITEM_SPELL_TAG,
         .price = 100,
         .holdEffect = HOLD_EFFECT_GHOST_POWER,
@@ -3425,7 +3425,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TWISTEDSPOON"),
+        .name = _("CUCH.TORCIDA"),
         .itemId = ITEM_TWISTED_SPOON,
         .price = 100,
         .holdEffect = HOLD_EFFECT_PSYCHIC_POWER,
@@ -3441,7 +3441,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("CHARCOAL"),
+        .name = _("CARBÓN"),
         .itemId = ITEM_CHARCOAL,
         .price = 9800,
         .holdEffect = HOLD_EFFECT_FIRE_POWER,
@@ -3457,7 +3457,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("DRAGON FANG"),
+        .name = _("COLM. DRAGÓN"),
         .itemId = ITEM_DRAGON_FANG,
         .price = 100,
         .holdEffect = HOLD_EFFECT_DRAGON_POWER,
@@ -3473,7 +3473,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("SILK SCARF"),
+        .name = _("PAÑUELO SEDA"),
         .itemId = ITEM_SILK_SCARF,
         .price = 100,
         .holdEffect = HOLD_EFFECT_NORMAL_POWER,
@@ -3489,7 +3489,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("UP-GRADE"),
+        .name = _("MEJORA"),
         .itemId = ITEM_UP_GRADE,
         .price = 2100,
         .holdEffect = HOLD_EFFECT_UP_GRADE,
@@ -3505,7 +3505,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("SHELL BELL"),
+        .name = _("CAMP. CONCHA"),
         .itemId = ITEM_SHELL_BELL,
         .price = 200,
         .holdEffect = HOLD_EFFECT_SHELL_BELL,
@@ -3521,7 +3521,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("SEA INCENSE"),
+        .name = _("INC. MARINO"),
         .itemId = ITEM_SEA_INCENSE,
         .price = 9600,
         .holdEffect = HOLD_EFFECT_WATER_POWER,
@@ -3537,7 +3537,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("LAX INCENSE"),
+        .name = _("INC. SUAVE"),
         .itemId = ITEM_LAX_INCENSE,
         .price = 9600,
         .holdEffect = HOLD_EFFECT_EVASION_UP,
@@ -3553,7 +3553,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("LUCKY PUNCH"),
+        .name = _("PUÑO SUERTE"),
         .itemId = ITEM_LUCKY_PUNCH,
         .price = 10,
         .holdEffect = HOLD_EFFECT_LUCKY_PUNCH,
@@ -3569,7 +3569,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("METAL POWDER"),
+        .name = _("POLVO METAL."),
         .itemId = ITEM_METAL_POWDER,
         .price = 10,
         .holdEffect = HOLD_EFFECT_METAL_POWDER,
@@ -3585,7 +3585,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("THICK CLUB"),
+        .name = _("HUESO GRUESO"),
         .itemId = ITEM_THICK_CLUB,
         .price = 500,
         .holdEffect = HOLD_EFFECT_THICK_CLUB,
@@ -3601,7 +3601,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("STICK"),
+        .name = _("PALO"),
         .itemId = ITEM_STICK,
         .price = 200,
         .holdEffect = HOLD_EFFECT_STICK,
@@ -4065,7 +4065,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("RED SCARF"),
+        .name = _("PAÑUELO ROJO"),
         .itemId = ITEM_RED_SCARF,
         .price = 100,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4081,7 +4081,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("BLUE SCARF"),
+        .name = _("PAÑUELO AZUL"),
         .itemId = ITEM_BLUE_SCARF,
         .price = 100,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4097,7 +4097,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("PINK SCARF"),
+        .name = _("PAÑUELO ROSA"),
         .itemId = ITEM_PINK_SCARF,
         .price = 100,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4113,7 +4113,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("GREEN SCARF"),
+        .name = _("PAÑ. VERDE"),
         .itemId = ITEM_GREEN_SCARF,
         .price = 100,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4129,7 +4129,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("YELLOW SCARF"),
+        .name = _("PAÑ.AMARILLO"),
         .itemId = ITEM_YELLOW_SCARF,
         .price = 100,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4145,7 +4145,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("MACH BIKE"),
+        .name = _("BICI CARRERA"),
         .itemId = ITEM_MACH_BIKE,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4161,7 +4161,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("COIN CASE"),
+        .name = _("MONEDERO"),
         .itemId = ITEM_COIN_CASE,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4177,7 +4177,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("ITEMFINDER"),
+        .name = _("BUSCAOBJETOS"),
         .itemId = ITEM_ITEMFINDER,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4193,7 +4193,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("OLD ROD"),
+        .name = _("CAÑA VIEJA"),
         .itemId = ITEM_OLD_ROD,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4209,7 +4209,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("GOOD ROD"),
+        .name = _("CAÑA BUENA"),
         .itemId = ITEM_GOOD_ROD,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4225,7 +4225,7 @@ const struct Item gItems[] =
         .secondaryId = 1,
     },
     {
-        .name = _("SUPER ROD"),
+        .name = _("SUPERCAÑA"),
         .itemId = ITEM_SUPER_ROD,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4241,7 +4241,7 @@ const struct Item gItems[] =
         .secondaryId = 2,
     },
     {
-        .name = _("S.S. TICKET"),
+        .name = _("TICKET BARCO"),
         .itemId = ITEM_SS_TICKET,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4257,7 +4257,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("CONTEST PASS"),
+        .name = _("PASE CONCURSO"),
         .itemId = ITEM_CONTEST_PASS,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4289,7 +4289,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("WAILMER PAIL"),
+        .name = _("CUBO WAILMER"),
         .itemId = ITEM_WAILMER_PAIL,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4305,7 +4305,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("DEVON GOODS"),
+        .name = _("PIEZAS DEVON"),
         .itemId = ITEM_DEVON_GOODS,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4321,7 +4321,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("SOOT SACK"),
+        .name = _("SACO HOLLÍN"),
         .itemId = ITEM_SOOT_SACK,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4337,7 +4337,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("BASEMENT KEY"),
+        .name = _("LLAVE SÓTANO"),
         .itemId = ITEM_BASEMENT_KEY,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4353,7 +4353,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("ACRO BIKE"),
+        .name = _("BICI ACROBAT"),
         .itemId = ITEM_ACRO_BIKE,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4369,7 +4369,7 @@ const struct Item gItems[] =
         .secondaryId = 1,
     },
     {
-        .name = _("{POKEBLOCK} CASE"),
+        .name = _("CAJA {POKEBLOCK}"),
         .itemId = ITEM_POKEBLOCK_CASE,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4385,7 +4385,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("LETTER"),
+        .name = _("CARTA"),
         .itemId = ITEM_LETTER,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4401,7 +4401,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("EON TICKET"),
+        .name = _("TICKET EÓN"),
         .itemId = ITEM_EON_TICKET,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4417,7 +4417,7 @@ const struct Item gItems[] =
         .secondaryId = 1,
     },
     {
-        .name = _("RED ORB"),
+        .name = _("ESFERA ROJA"),
         .itemId = ITEM_RED_ORB,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4433,7 +4433,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("BLUE ORB"),
+        .name = _("ESFERA AZUL"),
         .itemId = ITEM_BLUE_ORB,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4449,7 +4449,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("SCANNER"),
+        .name = _("ESCÁNER"),
         .itemId = ITEM_SCANNER,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4465,7 +4465,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("GO-GOGGLES"),
+        .name = _("GAFAS AISL."),
         .itemId = ITEM_GO_GOGGLES,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4481,7 +4481,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("METEORITE"),
+        .name = _("METEORITO"),
         .itemId = ITEM_METEORITE,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4497,7 +4497,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("RM. 1 KEY"),
+        .name = _("LLAVE CAB. 1"),
         .itemId = ITEM_ROOM_1_KEY,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4513,7 +4513,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("RM. 2 KEY"),
+        .name = _("LLAVE CAB. 2"),
         .itemId = ITEM_ROOM_2_KEY,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4529,7 +4529,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("RM. 4 KEY"),
+        .name = _("LLAVE CAB. 4"),
         .itemId = ITEM_ROOM_4_KEY,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4545,7 +4545,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("RM. 6 KEY"),
+        .name = _("LLAVE CAB. 6"),
         .itemId = ITEM_ROOM_6_KEY,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4561,7 +4561,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("STORAGE KEY"),
+        .name = _("LLAVEALMACÉN"),
         .itemId = ITEM_STORAGE_KEY,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4577,7 +4577,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("ROOT FOSSIL"),
+        .name = _("FÓSIL RAÍZ"),
         .itemId = ITEM_ROOT_FOSSIL,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4593,7 +4593,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("CLAW FOSSIL"),
+        .name = _("FÓSIL GARRA"),
         .itemId = ITEM_CLAW_FOSSIL,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4609,7 +4609,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("DEVON SCOPE"),
+        .name = _("DETECT.DEVON"),
         .itemId = ITEM_DEVON_SCOPE,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4625,7 +4625,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM01"),
+        .name = _("MT01"),
         .itemId = ITEM_TM01_FOCUS_PUNCH,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4641,7 +4641,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM02"),
+        .name = _("MT02"),
         .itemId = ITEM_TM02_DRAGON_CLAW,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4657,7 +4657,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM03"),
+        .name = _("MT03"),
         .itemId = ITEM_TM03_WATER_PULSE,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4673,7 +4673,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM04"),
+        .name = _("MT04"),
         .itemId = ITEM_TM04_CALM_MIND,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4689,7 +4689,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM05"),
+        .name = _("MT05"),
         .itemId = ITEM_TM05_ROAR,
         .price = 1000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4705,7 +4705,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM06"),
+        .name = _("MT06"),
         .itemId = ITEM_TM06_TOXIC,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4721,7 +4721,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM07"),
+        .name = _("MT07"),
         .itemId = ITEM_TM07_HAIL,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4737,7 +4737,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM08"),
+        .name = _("MT08"),
         .itemId = ITEM_TM08_BULK_UP,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4753,7 +4753,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM09"),
+        .name = _("MT09"),
         .itemId = ITEM_TM09_BULLET_SEED,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4769,7 +4769,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM10"),
+        .name = _("MT10"),
         .itemId = ITEM_TM10_HIDDEN_POWER,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4785,7 +4785,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM11"),
+        .name = _("MT11"),
         .itemId = ITEM_TM11_SUNNY_DAY,
         .price = 2000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4801,7 +4801,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM12"),
+        .name = _("MT12"),
         .itemId = ITEM_TM12_TAUNT,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4817,7 +4817,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM13"),
+        .name = _("MT13"),
         .itemId = ITEM_TM13_ICE_BEAM,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4833,7 +4833,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM14"),
+        .name = _("MT14"),
         .itemId = ITEM_TM14_BLIZZARD,
         .price = 5500,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4849,7 +4849,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM15"),
+        .name = _("MT15"),
         .itemId = ITEM_TM15_HYPER_BEAM,
         .price = 7500,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4865,7 +4865,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM16"),
+        .name = _("MT16"),
         .itemId = ITEM_TM16_LIGHT_SCREEN,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4881,7 +4881,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM17"),
+        .name = _("MT17"),
         .itemId = ITEM_TM17_PROTECT,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4897,7 +4897,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM18"),
+        .name = _("MT18"),
         .itemId = ITEM_TM18_RAIN_DANCE,
         .price = 2000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4913,7 +4913,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM19"),
+        .name = _("MT19"),
         .itemId = ITEM_TM19_GIGA_DRAIN,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4929,7 +4929,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM20"),
+        .name = _("MT20"),
         .itemId = ITEM_TM20_SAFEGUARD,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4945,7 +4945,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM21"),
+        .name = _("MT21"),
         .itemId = ITEM_TM21_FRUSTRATION,
         .price = 1000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4961,7 +4961,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM22"),
+        .name = _("MT22"),
         .itemId = ITEM_TM22_SOLARBEAM,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4977,7 +4977,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM23"),
+        .name = _("MT23"),
         .itemId = ITEM_TM23_IRON_TAIL,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -4993,7 +4993,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM24"),
+        .name = _("MT24"),
         .itemId = ITEM_TM24_THUNDERBOLT,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5009,7 +5009,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM25"),
+        .name = _("MT25"),
         .itemId = ITEM_TM25_THUNDER,
         .price = 5500,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5025,7 +5025,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM26"),
+        .name = _("MT26"),
         .itemId = ITEM_TM26_EARTHQUAKE,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5041,7 +5041,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM27"),
+        .name = _("MT27"),
         .itemId = ITEM_TM27_RETURN,
         .price = 1000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5057,7 +5057,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM28"),
+        .name = _("MT28"),
         .itemId = ITEM_TM28_DIG,
         .price = 2000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5073,7 +5073,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM29"),
+        .name = _("MT29"),
         .itemId = ITEM_TM29_PSYCHIC,
         .price = 2000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5089,7 +5089,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM30"),
+        .name = _("MT30"),
         .itemId = ITEM_TM30_SHADOW_BALL,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5105,7 +5105,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM31"),
+        .name = _("MT31"),
         .itemId = ITEM_TM31_BRICK_BREAK,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5121,7 +5121,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM32"),
+        .name = _("MT32"),
         .itemId = ITEM_TM32_DOUBLE_TEAM,
         .price = 2000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5137,7 +5137,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM33"),
+        .name = _("MT33"),
         .itemId = ITEM_TM33_REFLECT,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5153,7 +5153,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM34"),
+        .name = _("MT34"),
         .itemId = ITEM_TM34_SHOCK_WAVE,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5169,7 +5169,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM35"),
+        .name = _("MT35"),
         .itemId = ITEM_TM35_FLAMETHROWER,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5185,7 +5185,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM36"),
+        .name = _("MT36"),
         .itemId = ITEM_TM36_SLUDGE_BOMB,
         .price = 1000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5201,7 +5201,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM37"),
+        .name = _("MT37"),
         .itemId = ITEM_TM37_SANDSTORM,
         .price = 2000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5217,7 +5217,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM38"),
+        .name = _("MT38"),
         .itemId = ITEM_TM38_FIRE_BLAST,
         .price = 5500,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5233,7 +5233,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM39"),
+        .name = _("MT39"),
         .itemId = ITEM_TM39_ROCK_TOMB,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5249,7 +5249,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM40"),
+        .name = _("MT40"),
         .itemId = ITEM_TM40_AERIAL_ACE,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5265,7 +5265,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM41"),
+        .name = _("MT41"),
         .itemId = ITEM_TM41_TORMENT,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5281,7 +5281,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM42"),
+        .name = _("MT42"),
         .itemId = ITEM_TM42_FACADE,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5297,7 +5297,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM43"),
+        .name = _("MT43"),
         .itemId = ITEM_TM43_SECRET_POWER,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5313,7 +5313,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM44"),
+        .name = _("MT44"),
         .itemId = ITEM_TM44_REST,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5329,7 +5329,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM45"),
+        .name = _("MT45"),
         .itemId = ITEM_TM45_ATTRACT,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5345,7 +5345,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM46"),
+        .name = _("MT46"),
         .itemId = ITEM_TM46_THIEF,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5361,7 +5361,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM47"),
+        .name = _("MT47"),
         .itemId = ITEM_TM47_STEEL_WING,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5377,7 +5377,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM48"),
+        .name = _("MT48"),
         .itemId = ITEM_TM48_SKILL_SWAP,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5393,7 +5393,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM49"),
+        .name = _("MT49"),
         .itemId = ITEM_TM49_SNATCH,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5409,7 +5409,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("TM50"),
+        .name = _("MT50"),
         .itemId = ITEM_TM50_OVERHEAT,
         .price = 3000,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5425,7 +5425,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("HM01"),
+        .name = _("MO01"),
         .itemId = ITEM_HM01_CUT,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5441,7 +5441,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("HM02"),
+        .name = _("MO02"),
         .itemId = ITEM_HM02_FLY,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5457,7 +5457,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("HM03"),
+        .name = _("MO03"),
         .itemId = ITEM_HM03_SURF,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5473,7 +5473,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("HM04"),
+        .name = _("MO04"),
         .itemId = ITEM_HM04_STRENGTH,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5489,7 +5489,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("HM05"),
+        .name = _("MO05"),
         .itemId = ITEM_HM05_FLASH,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5505,7 +5505,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("HM06"),
+        .name = _("MO06"),
         .itemId = ITEM_HM06_ROCK_SMASH,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5521,7 +5521,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("HM07"),
+        .name = _("MO07"),
         .itemId = ITEM_HM07_WATERFALL,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,
@@ -5537,7 +5537,7 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
     {
-        .name = _("HM08"),
+        .name = _("MO08"),
         .itemId = ITEM_HM08_DIVE,
         .price = 0,
         .holdEffect = HOLD_EFFECT_NONE,

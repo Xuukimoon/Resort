@@ -809,7 +809,7 @@ static void VBlankCB_Intro(void)
     TransferPlttBuffer();
 }
 
-static void MainCB2_Intro(void)
+/*static void MainCB2_Intro(void)
 {
     RunTasks();
     AnimateSprites();
@@ -819,7 +819,7 @@ static void MainCB2_Intro(void)
         SetMainCallback2(MainCB2_EndIntro);
     else if (gIntroFrameCounter != -1)
         gIntroFrameCounter++;
-}
+}*/
 
 static void MainCB2_EndIntro(void)
 {
@@ -895,7 +895,7 @@ static u8 SetUpCopyrightScreen(void)
         if (UpdatePaletteFade())
             break;
         CreateTask(Task_IntroLoadPart1Graphics, 0);
-        SetMainCallback2(MainCB2_Intro);
+        SetMainCallback2(MainCB2_EndIntro);//SetMainCallback2(MainCB2_Intro);//quita intro
         if (gMultibootProgramStruct.gcmb_field_2)
         {
             GameCubeMultiBoot_ExecuteProgram(&gMultibootProgramStruct);

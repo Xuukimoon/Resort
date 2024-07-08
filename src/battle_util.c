@@ -1805,6 +1805,16 @@ u8 AbilityBattleEffects(u8 caseID, u8 bank, u8 ability, u8 special, u16 moveArg)
                         effect++;
                     }
                     break;
+				case WEATHER_ASH: //clima nieve y granizo
+                case WEATHER_SNOW:
+                    if (!(gBattleWeather & WEATHER_HAIL_ANY))
+                    {
+                        gBattleWeather = WEATHER_HAIL_ANY;
+                        gBattleStruct->animArg1 = B_ANIM_HAIL_CONTINUES;
+                        gBattleStruct->scriptingActive = bank;
+                        effect++;
+                    }
+                    break;//clima nieve y granizo	
                 case WEATHER_SANDSTORM:
                     if (!(gBattleWeather & WEATHER_SANDSTORM_ANY))
                     {

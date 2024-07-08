@@ -451,30 +451,29 @@ const u8* TryGetStatusString(u8* src)
     return NULL;
 }
 
-
-
 #define HANDLE_NICKNAME_STRING_CASE(bank, monIndex)                     \
-    if (GetBattlerSide(bank) != 0)                                         \
-    {                                                                   \
-        if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)                     \
-            toCpy = BattleText_Foe;                                  \
-        else                                                            \
-            toCpy = BattleText_Wild;                                  \
+    if (GetBattlerSide(bank) != 0)                                      \
+	{                                                                   \
+        GetMonData(&gEnemyParty[monIndex], MON_DATA_NICKNAME, text);    \
+        StringGetEnd10(text);                                           \
+        toCpy = text;                                                   \
         while (*toCpy != EOS)                                           \
         {                                                               \
             dst[dstID] = *toCpy;                                        \
             dstID++;                                                    \
             toCpy++;                                                    \
         }                                                               \
-        GetMonData(&gEnemyParty[monIndex], MON_DATA_NICKNAME, text);    \
+        if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)                     \
+            toCpy = BattleText_Foe;                                     \
+        else                                                            \
+            toCpy = BattleText_Wild;                                    \
     }                                                                   \
     else                                                                \
     {                                                                   \
         GetMonData(&gPlayerParty[monIndex], MON_DATA_NICKNAME, text);   \
-    }                                                                   \
-    StringGetEnd10(text);                                               \
-    toCpy = text;
-
+		StringGetEnd10(text);                                           \
+		toCpy = text;													\
+    }                                                                
 
 u32 BattleStringExpandPlaceholders(const u8* src, u8* dst)
 {

@@ -966,14 +966,14 @@ static void Task_NewGameSpeech16(u8 taskId)
     case MALE:
         Menu_DestroyCursor();
         PlaySE(SE_SELECT);
-        gSaveBlock2.playerGender = MALE;
+        gSaveBlock2.playerGender = MALE;//FEMALE;
         Menu_EraseWindowRect(2, 4, 8, 9);
         gTasks[taskId].func = Task_NewGameSpeech19;
         break;
     case FEMALE:
         Menu_DestroyCursor();
         PlaySE(SE_SELECT);
-        gSaveBlock2.playerGender = FEMALE;
+        gSaveBlock2.playerGender = FEMALE;//MALE;
         Menu_EraseWindowRect(2, 4, 8, 9);
         gTasks[taskId].func = Task_NewGameSpeech19;
         break;

@@ -318,7 +318,7 @@ static u8 TextSpeed_ProcessInput(u8 selection)
 
 #define TEXTSPEED_SLOW_LEFT (120)
 #define TEXTSPEED_MIX_LEFT (155)
-#define TEXTSPEED_FAST_LEFT (184)
+#define TEXTSPEED_FAST_LEFT (177)//184
 
 static void TextSpeed_DrawChoices(u8 selection)
 {
@@ -361,7 +361,7 @@ static u8 BattleStyle_ProcessInput(u8 selection)
 }
 
 #define BATTLESTYLE_SHIFT (120)
-#define BATTLESTYLE_SET (190)
+#define BATTLESTYLE_SET (169)//190
 
 static void BattleStyle_DrawChoices(u8 selection)
 {

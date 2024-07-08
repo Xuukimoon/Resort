@@ -1,1392 +1,1325 @@
 static const u8 gItemDescription_MasterBall[] = _(
-    "The best BALL that\n"
-    "catches a POKéMON\n"
-    "without fail.");
+    "Es la mejor.\n"
+    "Atrapa siempre al\n"
+    "POKéMON. No falla.");
 
 static const u8 gItemDescription_UltraBall[] = _(
-    "A better BALL with\n"
-    "a higher catch rate\n"
-    "than a GREAT BALL.");
+    "Es muy buena. Tiene\n"
+    "más índice de éxito\n"
+    "que la SUPERBALL.");
 
 static const u8 gItemDescription_GreatBall[] = _(
-    "A good BALL with a\n"
-    "higher catch rate\n"
-    "than a POKé BALL.");
+    "Es buena. Tiene\n"
+    "más índice de éxito\n"
+    "que la POKé BALL.");
 
 static const u8 gItemDescription_PokeBall[] = _(
-    "A tool used for\n"
-    "catching wild\n"
-    "POKéMON.");
+    "Sirve para atrapar\n"
+    "POKéMON salvajes.");
 
 static const u8 gItemDescription_SafariBall[] = _(
-    "A special BALL that\n"
-    "is used only in the\n"
-    "SAFARI ZONE.");
+    "Es especial. Sólo\n"
+    "se usa en la ZONA\n"
+    "SAFARI.");
 
 static const u8 gItemDescription_NetBall[] = _(
-    "A BALL that works\n"
-    "well on WATER- and\n"
-    "BUG-type POKéMON.");
+    "Funciona bien con\n"
+    "POKéMON de tipo\n"
+    "AGUA y BICHO.");
 
 static const u8 gItemDescription_DiveBall[] = _(
-    "A BALL that works\n"
-    "better on POKéMON\n"
-    "on the ocean floor.");
+    "Funcion bien con\n"
+    "POKéMON que están\n"
+    "en el océano.");
 
 static const u8 gItemDescription_NestBall[] = _(
-    "A BALL that works\n"
-    "better on weaker\n"
-    "POKéMON.");
+    "Funciona bien con\n"
+    "POKéMON débiles.");
 
 static const u8 gItemDescription_RepeatBall[] = _(
-    "A BALL that works\n"
-    "better on POKéMON\n"
-    "caught before.");
+    "Funciona bien con\n"
+    "POKéMON que ya has\n"
+    "capturado antes.");
 
 static const u8 gItemDescription_TimerBall[] = _(
-    "More effective as\n"
-    "more turns are\n"
-    "taken in battle.");
+    "A más turnos en\n"
+    "batalla, más\n"
+    "efectiva.");
 
 static const u8 gItemDescription_LuxuryBall[] = _(
-    "A cozy BALL that\n"
-    "makes POKéMON\n"
-    "more friendly.");
+    "Es acogedora. Los\n"
+    "POKéMON se vuelven\n"
+    "más amigables.");
 
 static const u8 gItemDescription_PremierBall[] = _(
-    "A rare BALL made\n"
-    "in commemoration\n"
-    "of some event.");
+    "Es muy particular.\n"
+    "Se hizo para\n"
+    "conmemorar algo.");
 
 static const u8 gItemDescription_Potion[] = _(
-    "Restores the HP of\n"
-    "a POKéMON by\n"
-    "20 points.");
+    "Restaura 20 PS\n"
+    "de un POKéMON.");
 
 static const u8 gItemDescription_Antidote[] = _(
-    "Heals a poisoned\n"
-    "POKéMON.");
+    "Cura a un POKéMON\n"
+    "envenenado.");
 
 static const u8 gItemDescription_BurnHeal[] = _(
-    "Heals POKéMON\n"
-    "of a burn.");
+    "Cura a un POKéMON\n"
+    "quemado.");
 
 static const u8 gItemDescription_IceHeal[] = _(
-    "Defrosts a frozen\n"
+    "Descongela a los\n"
     "POKéMON.");
 
 static const u8 gItemDescription_Awakening[] = _(
-    "Awakens a sleeping\n"
-    "POKéMON.");
+    "Despiert a un\n"
+    "POKéMON dormido.");
 
 static const u8 gItemDescription_ParalyzeHeal[] = _(
-    "Heals a paralyzed\n"
-    "POKéMON.");
+    "Cura a un POKéMON\n"
+    "paralizado.");
 
 static const u8 gItemDescription_FullRestore[] = _(
-    "Fully restores the\n"
-    "HP and status of a\n"
-    "POKéMON.");
+    "Restaura todos los\n"
+    "PS y problemas de\n"
+    "estado.");
 
 static const u8 gItemDescription_MaxPotion[] = _(
-    "Fully restores the\n"
-    "HP of a POKéMON.");
+    "Restaura todos los\n"
+    "PS de un POKéMON.");
 
 static const u8 gItemDescription_HyperPotion[] = _(
-    "Restores the HP of\n"
-    "a POKéMON by\n"
-    "200 points.");
+    "Restaura 200 PS\n"
+    "de un POKéMON.");
 
 static const u8 gItemDescription_SuperPotion[] = _(
-    "Restores the HP of\n"
-    "a POKéMON by\n"
-    "50 points.");
+    "Restaura 50 PS\n"
+    "PS de un POKéMON.");
 
 static const u8 gItemDescription_FullHeal[] = _(
-    "Heals all the status\n"
-    "problems of one\n"
+    "Cura los problemas\n"
+    "de estado de un\n"
     "POKéMON.");
 
 static const u8 gItemDescription_Revive[] = _(
-    "Revives a fainted\n"
-    "POKéMON with half\n"
-    "its HP.");
+    "Hace revivir a un\n"
+    "POKéMON. Le da\n"
+    "la mitad de los PS.");
 
 static const u8 gItemDescription_MaxRevive[] = _(
-    "Revives a fainted\n"
-    "POKéMON with all\n"
-    "its HP.");
+    "Hace revivir a un\n"
+    "POKéMON. Cura\n"
+    "todos sus PS.");
 
 static const u8 gItemDescription_FreshWater[] = _(
-    "A mineral water\n"
-    "that restores HP\n"
-    "by 50 points.");
+    "Agua mineral que\n"
+    "restaura 50 PS.");
 
 static const u8 gItemDescription_SodaPop[] = _(
-    "A fizzy soda drink\n"
-    "that restores HP\n"
-    "by 60 points.");
+    "Bebida gaseosa que\n"
+    "restaura 60 PS.");
 
 static const u8 gItemDescription_Lemonade[] = _(
-    "A very sweet drink\n"
-    "that restores HP\n"
-    "by 80 points.");
+    "Bebida dulce que\n"
+    "restaura 80 PS.z");
 
 static const u8 gItemDescription_MoomooMilk[] = _(
-    "A nutritious milk\n"
-    "that restores HP\n"
-    "by 100 points.");
+    "Leche nutritiva\n"
+    "que restaura\n"
+    "100 PS.");
 
 static const u8 gItemDescription_EnergyPowder[] = _(
-    "A bitter powder\n"
-    "that restores HP\n"
-    "by 50 points.");
+    "Polvo medicinal\n"
+    "que restaura\n"
+    "50 PS.");
 
 static const u8 gItemDescription_EnergyRoot[] = _(
-    "A bitter root\n"
-    "that restores HP\n"
-    "by 200 points.");
+    "Raíz amarga que\n"
+    "restaura 200 PS.");
 
 static const u8 gItemDescription_HealPowder[] = _(
-    "A bitter powder\n"
-    "that heals all\n"
-    "status problems.");
+    "Polvos amargos que\n"
+    "curan problemas\n"
+    "de estado.");
 
 static const u8 gItemDescription_RevivalHerb[] = _(
-    "A very bitter herb\n"
-    "that revives a\n"
-    "fainted POKéMON.");
+    "Hierba amarga que\n"
+    "reanima a un\n"
+    "POKéMON.");
 
 static const u8 gItemDescription_Ether[] = _(
-    "Restores the PP\n"
-    "of a selected move\n"
-    "by 10.");
+    "Restaura 10 PP del\n"
+    "ataque que elijas.");
 
 static const u8 gItemDescription_MaxEther[] = _(
-    "Fully restores the\n"
-    "PP of a selected\n"
-    "move.");
+    "Restaura los PP del\n"
+    "ataque que elijas.");
 
 static const u8 gItemDescription_Elixir[] = _(
-    "Restores the PP\n"
-    "of all moves by 10.");
+    "Restaura los PP de\n"
+    "todos los ataques\n"
+	"por 10.");
 
 static const u8 gItemDescription_MaxElixir[] = _(
-    "Fully restores the\n"
-    "PP of a POKéMON's\n"
-    "moves.");
+    "Restaura los PP de\n"
+    "todos los ataques\n"
+    "de un POKéMON.");
 
 static const u8 gItemDescription_LavaCookie[] = _(
-    "A local specialty\n"
-    "that heals all\n"
-    "status problems.");
+    "Dulce típico\n"
+    "que cura todos los\n"
+    "problemas de estado.");
 
 static const u8 gItemDescription_BlueFlute[] = _(
-    "A glass flute that\n"
-    "awakens sleeping\n"
-    "POKéMON.");
+    "Flauta de cristal\n"
+    "que despierta los\n"
+    "POKéMON dormidos.");
 
 static const u8 gItemDescription_YellowFlute[] = _(
-    "A glass flute that\n"
-    "snaps POKéMON\n"
-    "out of confusion.");
+    "Flauta de cristal\n"
+    "que cura POKéMON\n"
+    "de confusión.");
 
 static const u8 gItemDescription_RedFlute[] = _(
-    "A glass flute that\n"
-    "snaps POKéMON\n"
-    "out of attraction.");
+    "Flauta de cristal\n"
+    "que cura POKéMON\n"
+    "de atracción.");
 
 static const u8 gItemDescription_BlackFlute[] = _(
-    "A glass flute that\n"
-    "keeps away wild\n"
-    "POKéMON.");
+    "Flauta de cristal\n"
+    "que aleja a los\n"
+    "POKéMON salvajes.");
 
 static const u8 gItemDescription_WhiteFlute[] = _(
-    "A glass flute that\n"
-    "lures wild POKéMON.");
+    "Flauta de cristal\n"
+    "que atrae a los\n"
+	"POKéMON salvajes.");
 
 static const u8 gItemDescription_BerryJuice[] = _(
-    "A 100% pure juice\n"
-    "that restores HP\n"
-    "by 20 points.");
+    "Zumo 100% natural\n"
+    "que restaura\n"
+    "20 PS.");
 
 static const u8 gItemDescription_SacredAsh[] = _(
-    "Fully revives and\n"
-    "restores all\n"
-    "fainted POKéMON.");
+    "Revive a todos los\n"
+    "POKéMON debilitados.");
 
 static const u8 gItemDescription_ShoalSalt[] = _(
-    "Salt obtained from\n"
-    "deep inside the\n"
-    "SHOAL CAVE.");
+    "Sal procedente de\n"
+    "lo más profundo de\n"
+    "la CUEVA CARDUMEN.");
 
 static const u8 gItemDescription_ShoalShell[] = _(
-    "A seashell found\n"
-    "deep inside the\n"
-    "SHOAL CAVE.");
+    "Concha marina de\n"
+    "lo más profundo de\n"
+    "la CUEVA CARDUMEN.");
 
 static const u8 gItemDescription_RedShard[] = _(
-    "A shard from an\n"
-    "ancient item.\n"
-    "Can be sold cheaply.");
+    "Parte de un objeto\n"
+    "antiguo. Se vende\n"
+    "a bajo precio.");
 
 static const u8 gItemDescription_BlueShard[] = _(
-    "A shard from an\n"
-    "ancient item.\n"
-    "Can be sold cheaply.");
+    "Parte de un objeto\n"
+    "antiguo. Se vende\n"
+    "a bajo precio.");
 
 static const u8 gItemDescription_YellowShard[] = _(
-    "A shard from an\n"
-    "ancient item.\n"
-    "Can be sold cheaply.");
+    "Parte de un objeto\n"
+    "antiguo. Se vende\n"
+    "a bajo precio.");
 
 static const u8 gItemDescription_GreenShard[] = _(
-    "A shard from an\n"
-    "ancient item.\n"
-    "Can be sold cheaply.");
+    "Parte de un objeto\n"
+    "antiguo. Se vende\n"
+    "a bajo precio.");
 
 static const u8 gItemDescription_HPUp[] = _(
-    "Raises the HP of\n"
-    "one POKéMON.");
+    "Aumenta los PS\n"
+    "de un POKéMON.");
 
 static const u8 gItemDescription_Protein[] = _(
-    "Raises the stat\n"
-    "ATTACK of one\n"
-    "POKéMON.");
+    "Aumenta el ATAQUE\n"
+    "de un POKéMON.");
 
 static const u8 gItemDescription_Iron[] = _(
-    "Raises the stat\n"
-    "DEFENSE of one\n"
-    "POKéMON.");
+    "Aumenta la DEFENSA\n"
+    "de un POKéMON.");
 
 static const u8 gItemDescription_Carbos[] = _(
-    "Raises the stat\n"
-    "SPEED of one\n"
-    "POKéMON.");
+    "Sube la VELOCIDAD\n"
+    "de un POKéMON.");
 
 static const u8 gItemDescription_Calcium[] = _(
-    "Raises the stat\n"
-    "SP. ATK of one\n"
-    "POKéMON.");
+    "Sube el AT.ESP.\n"
+    "de un POKéMON.");
 
 static const u8 gItemDescription_RareCandy[] = _(
-    "Raises the level\n"
-    "of a POKéMON by\n"
-    "one.");
+    "Aumenta 1 nivel\n"
+    "a un POKéMON.");
 
 static const u8 gItemDescription_PPUp[] = _(
-    "Raises the maximum\n"
-    "PP of a selected\n"
-    "move.");
+    "Aumenta los PP\n"
+    "máximos del\n"
+    "ataque que elijas.");
 
 static const u8 gItemDescription_Zinc[] = _(
-    "Raises the stat\n"
-    "SP. DEF of one\n"
-    "POKéMON.");
+    "Aumenta la DEF.\n"
+    "ESP. de un\n"
+	"POKéMON.");
 
 static const u8 gItemDescription_PPMax[] = _(
-    "Raises the PP of a\n"
-    "move to its maximum\n"
-    "points.");
+    "Aumenta los PP\n"
+    "del ataque que\n"
+    "elijas al máximo.");
 
 static const u8 gItemDescription_GuardSpec[] = _(
-    "Prevents stat\n"
-    "reduction when\n"
-    "used in battle.");
+    "Evita la reducción\n"
+    "de características\n"
+    "durante el combate.");
 
 static const u8 gItemDescription_DireHit[] = _(
-    "Raises the\n"
-    "critical-hit ratio\n"
-    "during one battle.");
+    "Aumenta el índice\n"
+    "de golpe crítico\n"
+    "en un combate.");
 
 static const u8 gItemDescription_XAttack[] = _(
-    "Raises the stat\n"
-    "ATTACK during one\n"
-    "battle.");
+    "Aumenta el\n"
+    "ATAQUE durante\n"
+    "un combate.");
 
 static const u8 gItemDescription_XDefend[] = _(
-    "Raises the stat\n"
-    "DEFENSE during one\n"
-    "battle.");
+    "Aumenta la\n"
+    "DEFENSA durante\n"
+    "un combate.");
 
 static const u8 gItemDescription_XSpeed[] = _(
-    "Raises the stat\n"
-    "SPEED during one\n"
-    "battle.");
+    "Aumenta la\n"
+    "VELOCIDAD durante\n"
+    "un combate.");
 
 static const u8 gItemDescription_XAccuracy[] = _(
-    "Raises accuracy\n"
-    "of attack moves\n"
-    "during one battle.");
+    "Aumenta la PRECI-\n"
+    "SIÓN de los ataques\n"
+    "en un combate.");
 
 static const u8 gItemDescription_XSpecial[] = _(
-    "Raises the stat\n"
-    "SP. ATK during one\n"
-    "battle.");
+    "Aumenta el AT.ESP.\n"
+    "en un combate.");
 
 static const u8 gItemDescription_PokeDoll[] = _(
-    "Use to flee from\n"
-    "any battle with\n"
-    "a wild POKéMON.");
+    "Sirve para huir de\n"
+    "un combate con un\n"
+    "POKéMON salvaje.");
 
 static const u8 gItemDescription_FluffyTail[] = _(
-    "Use to flee from\n"
-    "any battle with\n"
-    "a wild POKéMON.");
+    "Sirve para huir de\n"
+    "un combate con un\n"
+    "POKéMON salvaje.");
 
 static const u8 gItemDescription_SuperRepel[] = _(
-    "Repels weak wild\n"
-    "POKéMON for 200\n"
-    "steps.");
+    "Repele POKéMON\n"
+    "salvajes débiles\n"
+    "200 pasos.");
 
 static const u8 gItemDescription_MaxRepel[] = _(
-    "Repels weak wild\n"
-    "POKéMON for 250\n"
-    "steps.");
+    "Repele POKéMON\n"
+    "salvajes débiles\n"
+    "250 pasos.");
 
 static const u8 gItemDescription_EscapeRope[] = _(
-    "Use to escape\n"
-    "instantly from a\n"
-    "cave or a dungeon.");
+    "Sirve para huir de\n"
+    "una cueva u otros\n"
+    "sitios cerrados.");
 
 static const u8 gItemDescription_Repel[] = _(
-    "Repels weak wild\n"
-    "POKéMON for 100\n"
-    "steps.");
+    "Repele POKéMON\n"
+    "salvajes débiles\n"
+    "100 pasos.");
 
 static const u8 gItemDescription_SunStone[] = _(
-    "Makes certain\n"
-    "species of POKéMON\n"
-    "evolve.");
+    "Hace evolucionar\n"
+    "a varias especies\n"
+    "de POKéMON.");
 
 static const u8 gItemDescription_MoonStone[] = _(
-    "Makes certain\n"
-    "species of POKéMON\n"
-    "evolve.");
+    "Hace evolucionar\n"
+    "a varias especies\n"
+    "de POKéMON.");
 
 static const u8 gItemDescription_FireStone[] = _(
-    "Makes certain\n"
-    "species of POKéMON\n"
-    "evolve.");
+    "Hace evolucionar\n"
+    "a varias especies\n"
+    "de POKéMON.");
 
 static const u8 gItemDescription_ThunderStone[] = _(
-    "Makes certain\n"
-    "species of POKéMON\n"
-    "evolve.");
+    "Hace evolucionar\n"
+    "a varias especies\n"
+    "de POKéMON.");
 
 static const u8 gItemDescription_WaterStone[] = _(
-    "Makes certain\n"
-    "species of POKéMON\n"
-    "evolve.");
+    "Hace evolucionar\n"
+    "a varias especies\n"
+    "de POKéMON.");
 
 static const u8 gItemDescription_LeafStone[] = _(
-    "Makes certain\n"
-    "species of POKéMON\n"
-    "evolve.");
+    "Hace evolucionar\n"
+    "a varias especies\n"
+    "de POKéMON.");
 
 static const u8 gItemDescription_TinyMushroom[] = _(
-    "A plain, ordinary\n"
-    "mushroom.\n"
-    "Can be sold cheaply.");
+    "Una simple seta.\n"
+    "Puede ser vendida\n"
+    "a un bajo precio.");
 
 static const u8 gItemDescription_BigMushroom[] = _(
-    "A rare mushroom\n"
-    "that would sell at a\n"
-    "high price.");
+    "Seta rara que\n"
+    "se puede vender a\n"
+    "un buen precio.");
 
 static const u8 gItemDescription_Pearl[] = _(
-    "A pretty pearl.\n"
-    "Can be sold cheaply.");
+    "Una bonita perla.\n"
+    "Se puede vender a\n"
+	"un bajo precio.");
 
 static const u8 gItemDescription_BigPearl[] = _(
-    "A lovely large pearl\n"
-    "that would sell at a\n"
-    "high price.");
+    "Hermosa perla que\n"
+    "se puede vender a\n"
+    "un buen precio.");
 
 static const u8 gItemDescription_Stardust[] = _(
-    "Beautiful red sand.\n"
-    "Can be sold at a\n"
-    "high price.");
+    "Bonita arena roja.\n"
+    "se puede vender a\n"
+    "un buen precio.");
 
 static const u8 gItemDescription_StarPiece[] = _(
-    "A red gem shard.\n"
-    "It would sell for a\n"
-    "very high price.");
+    "Parte de gema roja\n"
+    "Se puede vender a\n"
+    "muy buen precio.");
 
 static const u8 gItemDescription_Nugget[] = _(
-    "A nugget of pure\n"
-    "gold. Can be sold at\n"
-    "a high price.");
+    "Una pepita de oro.\n"
+    "Se puede vender a\n"
+    "muy buen precio.");
 
 static const u8 gItemDescription_HeartScale[] = _(
-    "A lovely scale.\n"
-    "It is coveted by\n"
-    "collectors.");
+    "Hermosa escama.\n"
+    "Es codiciada por\n"
+    "coleccionistas.");
 
 static const u8 gItemDescription_OrangeMail[] = _(
-    "A ZIGZAGOON-print\n"
-    "MAIL to be held by\n"
-    "a POKéMON.");
+    "Carta con la imagen\n"
+    "de Zigzagoon.");
 
 static const u8 gItemDescription_HarborMail[] = _(
-    "A WINGULL-print\n"
-    "MAIL to be held by\n"
-    "a POKéMON.");
+    "Carta con la imagen\n"
+    "de Wingull.");
 
 static const u8 gItemDescription_GlitterMail[] = _(
-    "A PIKACHU-print\n"
-    "MAIL to be held by\n"
-    "a POKéMON.");
+    "Carta con la imagen\n"
+    "de Pikachu.");
 
 static const u8 gItemDescription_MechMail[] = _(
-    "A MAGNEMITE-print\n"
-    "MAIL to be held by\n"
-    "a POKéMON.");
+    "Carta con la imagen\n"
+    "de Magnemite.");
 
 static const u8 gItemDescription_WoodMail[] = _(
-    "A SLAKOTH-print\n"
-    "MAIL to be held by\n"
-    "a POKéMON.");
+    "Carta con la imagen\n"
+    "de Slakoth.");
 
 static const u8 gItemDescription_WaveMail[] = _(
-    "A WAILMER-print\n"
-    "MAIL to be held by\n"
-    "a POKéMON.");
+    "Carta con la imagen\n"
+    "de Wailmer.");
 
 static const u8 gItemDescription_BeadMail[] = _(
-    "MAIL featuring a\n"
-    "sketch of the\n"
-    "holding POKéMON.");
+    "Carta con la imagen\n"
+    "del Pokémon que la\n"
+    "lleva.");
 
 static const u8 gItemDescription_ShadowMail[] = _(
-    "A DUSKULL-print\n"
-    "MAIL to be held by\n"
-    "a POKéMON.");
+    "Carta con la imagen\n"
+    "de Duskull.");
 
 static const u8 gItemDescription_TropicMail[] = _(
-    "A BELLOSSOM-print\n"
-    "MAIL to be held by\n"
-    "a POKéMON.");
+    "Carta con la imagen\n"
+    "de Bellossom.");
 
 static const u8 gItemDescription_DreamMail[] = _(
-    "MAIL featuring a\n"
-    "sketch of the\n"
-    "holding POKéMON.");
+    "Carta con la imagen\n"
+    "del Pokémon que la\n"
+    "lleva.");
 
 static const u8 gItemDescription_FabMail[] = _(
-    "A gorgeous-print\n"
-    "MAIL to be held\n"
-    "by a POKéMON.");
+    "Carta con un dibujo\n"
+    "fabuloso y\n"
+    "extravagante.");
 
 static const u8 gItemDescription_RetroMail[] = _(
-    "MAIL featuring the\n"
-    "drawings of three\n"
-    "POKéMON.");
+    "Carta con las\n"
+    "imágenes de tres\n"
+    "Pokémon.");
 
 static const u8 gItemDescription_CheriBerry[] = _(
-    "A hold item that\n"
-    "heals paralysis\n"
-    "in battle.");
+    "Cura la parálisis");
 
 static const u8 gItemDescription_ChestoBerry[] = _(
-    "A hold item that\n"
-    "awakens POKéMON\n"
-    "in battle.");
+    "Despierta al\n"
+    "Pokémon");
 
 static const u8 gItemDescription_PechaBerry[] = _(
-    "A hold item that\n"
-    "heals poisoning\n"
-    "in battle.");
+    "Cura el\n"
+    "envenenamiento");
 
 static const u8 gItemDescription_RawstBerry[] = _(
-    "A hold item that\n"
-    "heals a burn in\n"
-    "battle.");
+    "Cura las\n"
+    "quemaduras");
 
 static const u8 gItemDescription_AspearBerry[] = _(
-    "A hold item that\n"
-    "defrosts POKéMON\n"
-    "in battle.");
+    "Cura el\n"
+    "congelamiento");
 
 static const u8 gItemDescription_LeppaBerry[] = _(
-    "A hold item that\n"
-    "restores 10 PP in\n"
-    "battle.");
+    "Restaura 10 PP");
 
 static const u8 gItemDescription_OranBerry[] = _(
-    "A hold item that\n"
-    "restores 10 HP in\n"
-    "battle.");
+    "Restaura 10 PS");
 
 static const u8 gItemDescription_PersimBerry[] = _(
-    "A hold item that\n"
-    "heals confusion\n"
-    "in battle.");
+    "Cura la confusión");
 
 static const u8 gItemDescription_LumBerry[] = _(
-    "A hold item that\n"
-    "heals status in\n"
-    "battle.");
+    "Cura cualquier\n"
+    "problema de estado");
 
 static const u8 gItemDescription_SitrusBerry[] = _(
-    "A hold item that\n"
-    "restores 30 HP in\n"
-    "battle.");
+    "Restaura 30 PS");
 
 static const u8 gItemDescription_FigyBerry[] = _(
-    "A hold item that\n"
-    "restores HP but\n"
-    "may confuse.");
+    "Restaura PS pero\n"
+    "puede confundir.");
 
 static const u8 gItemDescription_WikiBerry[] = _(
-    "A hold item that\n"
-    "restores HP but\n"
-    "may confuse.");
+    "Restaura PS pero\n"
+    "puede confundir.");
 
 static const u8 gItemDescription_MagoBerry[] = _(
-    "A hold item that\n"
-    "restores HP but\n"
-    "may confuse.");
+    "Restaura PS pero\n"
+    "puede confundir.");
 
 static const u8 gItemDescription_AguavBerry[] = _(
-    "A hold item that\n"
-    "restores HP but\n"
-    "may confuse.");
+    "Restaura PS pero\n"
+    "puede confundir.");
 
 static const u8 gItemDescription_IapapaBerry[] = _(
-    "A hold item that\n"
-    "restores HP but\n"
-    "may confuse.");
+    "Restaura PS pero\n"
+    "puede confundir.");
 
 static const u8 gItemDescription_RazzBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow RAZZ.");
+    "Sirve para hacer\n"
+    "{POKEBLOCK}");
 
 static const u8 gItemDescription_BlukBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow BLUK.");
+    "Sirve para hacer\n"
+    "{POKEBLOCK}");
 
 static const u8 gItemDescription_NanabBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow NANAB.");
+    "Sirve para hacer\n"
+    "{POKEBLOCK}");
 
 static const u8 gItemDescription_WepearBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow WEPEAR.");
+    "Sirve para hacer\n"
+    "{POKEBLOCK}");
 
 static const u8 gItemDescription_PinapBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow PINAP.");
+    "Sirve para hacer\n"
+    "{POKEBLOCK}");
 
 static const u8 gItemDescription_PomegBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow POMEG.");
+    "Sirve para hacer\n"
+    "{POKEBLOCK}");
 
 static const u8 gItemDescription_KelpsyBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow KELPSY.");
+    "Sirve para hacer\n"
+    "{POKEBLOCK}");
 
 static const u8 gItemDescription_QualotBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow QUALOT.");
+    "Sirve para hacer\n"
+    "{POKEBLOCK}");
 
 static const u8 gItemDescription_HondewBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow HONDEW.");
+    "Sirve para hacer\n"
+    "{POKEBLOCK}");
 
 static const u8 gItemDescription_GrepaBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow GREPA.");
+    "Sirve para hacer\n"
+    "{POKEBLOCK}");
 
 static const u8 gItemDescription_TamatoBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow TAMATO.");
+    "Sirve para hacer\n"
+    "{POKEBLOCK}");
 
 static const u8 gItemDescription_CornnBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow CORNN.");
+    "Sirve para hacer\n"
+    "{POKEBLOCK}");
 
 static const u8 gItemDescription_MagostBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow MAGOST.");
+    "Sirve para hacer\n"
+    "{POKEBLOCK}");
 
 static const u8 gItemDescription_RabutaBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow RABUTA.");
+    "Sirve para hacer\n"
+    "{POKEBLOCK}");
 
 static const u8 gItemDescription_NomelBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow NOMEL.");
+    "Sirve para hacer\n"
+    "{POKEBLOCK}");
 
 static const u8 gItemDescription_SpelonBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow SPELON.");
+    "Sirve para hacer\n"
+    "{POKEBLOCK}");
 
 static const u8 gItemDescription_PamtreBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow PAMTRE.");
+    "Sirve para hacer\n"
+    "{POKEBLOCK}");
 
 static const u8 gItemDescription_WatmelBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow WATMEL.");
+    "Sirve para hacer\n"
+    "{POKEBLOCK}");
 
 static const u8 gItemDescription_DurinBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow DURIN.");
+    "Sirve para hacer\n"
+    "{POKEBLOCK}");
 
 static const u8 gItemDescription_BelueBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow BELUE.");
+    "Sirve para hacer\n"
+    "{POKEBLOCK}");
 
 static const u8 gItemDescription_LiechiBerry[] = _(
-    "A hold item that\n"
-    "raises ATTACK in\n"
-    "a pinch.");
+    "Aumenta el AT.\n"
+    "cuando los PS están\n"
+    "por debajo de 1/3.");
 
 static const u8 gItemDescription_GanlonBerry[] = _(
-    "A hold item that\n"
-    "raises DEFENSE in\n"
-    "a pinch.");
+    "Aumenta la DEF.\n"
+    "cuando los PS están\n"
+    "por debajo de 1/3.");
 
 static const u8 gItemDescription_SalacBerry[] = _(
-    "A hold item that\n"
-    "raises SPEED in\n"
-    "a pinch.");
+    "Aumenta la VEL.\n"
+    "cuando los PS están\n"
+    "por debajo de 1/3.");
 
 static const u8 gItemDescription_PetayaBerry[] = _(
-    "A hold item that\n"
-    "raises SP. ATK in\n"
-    "a pinch.");
+    "Aumenta el AT.ESP\n"
+    "cuando los PS están\n"
+    "por debajo de 1/3.");
 
 static const u8 gItemDescription_ApicotBerry[] = _(
-    "A hold item that\n"
-    "raises SP. DEF in\n"
-    "a pinch.");
+    "Aumenta la DEF.ESP\n"
+    "cuando los PS están\n"
+    "por debajo de 1/3.");
 
 static const u8 gItemDescription_LansatBerry[] = _(
-    "A hold item that\n"
-    "ups the critical-\n"
-    "hit rate in a pinch.");
+    "Aumenta la\n"
+    "posibilidad de dar\n"
+    "un golpe crítico.");
 
 static const u8 gItemDescription_StarfBerry[] = _(
-    "A hold item that\n"
-    "sharply boosts a\n"
-    "stat in a pinch.");
+    "Aumenta cualquier\n"
+    "stat cuando estás\n"
+    "en apuros.");
 
 static const u8 gItemDescription_EnigmaBerry[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow a mystery.");
+    "Sirve para hacer\n"
+    "{POKEBLOCK}. Hace\n"
+	"crecer algo raro.");
 
 static const u8 gItemDescription_BrightPowder[] = _(
-    "A hold item that\n"
-    "casts a glare to\n"
-    "reduce accuracy.");
+    "Lanza un destello\n"
+    "que baja la\n"
+    "PRECISIÓN.");
 
 static const u8 gItemDescription_WhiteHerb[] = _(
-    "A hold item that\n"
-    "restores any\n"
-    "lowered stat.");
+    "Restaura cualquier\n"
+    "característica\n"
+    "bajada en combate.");
 
 static const u8 gItemDescription_MachoBrace[] = _(
-    "A hold item that\n"
-    "promotes growth,\n"
-    "but reduces SPEED.");
+    "Brazal que fomenta\n"
+    "el crecimiento pero\n"
+    "reduce la VEL.");
 
 static const u8 gItemDescription_ExpShare[] = _(
-    "A hold item that\n"
-    "gets EXP. points\n"
-    "from battles.");
+    "Al llevarlo, se\n"
+    "toma EXP. de los\n"
+    "combates.");
 
 static const u8 gItemDescription_QuickClaw[] = _(
-    "A hold item that\n"
-    "occasionally allows\n"
-    "the first strike.");
+    "Permite\n"
+    "ocasionalmente\n"
+    "atacar primero.");
 
 static const u8 gItemDescription_SootheBell[] = _(
-    "A hold item that\n"
-    "calms spirits and\n"
-    "fosters friendship.");
+    "Vuelve más amistoso\n"
+    "al POKéMON que la\n"
+    "lleva.");
 
 static const u8 gItemDescription_MentalHerb[] = _(
-    "A hold item that\n"
-    "snaps POKéMON out\n"
-    "of infatuation.");
+    "El Pokémon que la\n"
+    "lleve se libera del\n"
+    "enamoramiento.");
 
 static const u8 gItemDescription_ChoiceBand[] = _(
-    "Raises a move's\n"
-    "power, but permits\n"
-    "only that move.");
+    "Aumenta el ATAQUE\n"
+    "pero solo permite\n"
+    "usar un tipo de mov.");
 
 static const u8 gItemDescription_KingsRock[] = _(
-    "A hold item that\n"
-    "may cause flinching\n"
-    "when the foe is hit.");
+    "Puede hacer\n"
+    "retroceder al\n"
+    "enemigo");
 
 static const u8 gItemDescription_SilverPowder[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "BUG-type moves.");
+    "Polvo que fortalece\n"
+    "los ataques de tipo\n"
+    "Bicho.");
 
 static const u8 gItemDescription_AmuletCoin[] = _(
-    "Doubles money in\n"
-    "battle if the holder\n"
-    "takes part.");
+    "Duplica las\n"
+    "ganancias al luchar\n"
+    "con él equipado.");
 
 static const u8 gItemDescription_CleanseTag[] = _(
-    "A hold item that\n"
-    "helps repel wild\n"
-    "POKéMON.");
+    "Ayuda a repeler los\n"
+    "POKéMON salvajes.");
 
 static const u8 gItemDescription_SoulDew[] = _(
-    "Hold item: Raises\n"
-    "SP. ATK & SP. DEF\n"
-    "of LATIOS & LATIAS.");
+    "Sube el AT.ESP. y\n"
+    "la DEF.ESP. de\n"
+    "Latios y Latias.");
 
 static const u8 gItemDescription_DeepSeaTooth[] = _(
-    "A hold item that\n"
-    "raises the SP. ATK\n"
-    "of CLAMPERL.");
+    "Debe llevarlo\n"
+    "CLAMPERL. Sube el\n"
+    "AT.ESP.");
 
 static const u8 gItemDescription_DeepSeaScale[] = _(
-    "A hold item that\n"
-    "raises the SP. DEF\n"
-    "of CLAMPERL.");
+    "Debe llevarla\n"
+    "CLAMPERL. Sube la\n"
+    "DEF.ESP.");
 
 static const u8 gItemDescription_SmokeBall[] = _(
-    "A hold item that\n"
-    "can be used to flee\n"
-    "from a wild POKéMON.");
+    "Permite huir de\n"
+    "combates contra\n"
+    "Pokémon salvajes.");
 
 static const u8 gItemDescription_Everstone[] = _(
-    "A wondrous stone\n"
-    "& a hold item that\n"
-    "prevents evolution.");
+    "El Pokémon que\n"
+    "lleve esta piedra\n"
+    "no evolucionará.");
 
 static const u8 gItemDescription_FocusBand[] = _(
-    "A hold item that\n"
-    "occasionally\n"
-    "prevents fainting.");
+    "Al llevarla, quizá\n"
+    "evites debilitarte.");
 
 static const u8 gItemDescription_LuckyEgg[] = _(
-    "A hold item that\n"
-    "boosts EXP. points\n"
-    "earned in battle.");
+    "Al llevarlo, ganarás\n"
+    "muchos más puntos\n"
+    "de EXP. en combate.");
 
 static const u8 gItemDescription_ScopeLens[] = _(
-    "A hold item that\n"
-    "raises the critical-\n"
-    "hit rate.");
+    "Al llevarlo, aumenta\n"
+    "la posibilidad\n"
+    "de golpe crítico.");
 
 static const u8 gItemDescription_MetalCoat[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "STEEL-type moves.");
+    "Al llevarlo, se for-\n"
+    "talecen los ataques\n"
+    "de tipo ACERO.");
 
 static const u8 gItemDescription_Leftovers[] = _(
-    "A hold item that\n"
-    "gradually restores\n"
-    "HP in battle.");
+    "Al llevarlo, van\n"
+    "restaurando los PS\n"
+    "durante el combate.");
 
 static const u8 gItemDescription_DragonScale[] = _(
-    "A strange scale\n"
-    "held by DRAGON-\n"
-    "type POKéMON.");
+    "Peculiar escama que\n"
+    "lleva los POKéMON\n"
+    "de tipo DRAGÓN.");
 
 static const u8 gItemDescription_LightBall[] = _(
-    "A hold item that\n"
-    "raises the SP. ATK\n"
-    "of PIKACHU.");
+    "Al llevarla, el AT.\n"
+    "ESP. de PIKACHU\n"
+    "aumentará.");
 
 static const u8 gItemDescription_SoftSand[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "GROUND-type moves.");
+    "Al llevarla, se for-\n"
+    "talecen los ataques\n"
+    "de tipo TIERRA.");
 
 static const u8 gItemDescription_HardStone[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "ROCK-type moves.");
+    "Al llevarla, se for-\n"
+    "talecen los ataques\n"
+    "de tipo ROCA.");
 
 static const u8 gItemDescription_MiracleSeed[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "GRASS-type moves.");
+    "Al llevarla, se for-\n"
+    "talecen los ataques\n"
+    "de tipo PLANTA.");
 
 static const u8 gItemDescription_BlackGlasses[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "DARK-type moves.");
+    "Al llevarla, se for-\n"
+    "talecen los ataques\n"
+    "de tipo SINIESTRO.");
 
 static const u8 gItemDescription_BlackBelt[] = _(
-    "A hold item that\n"
-    "boosts FIGHTING-\n"
-    "type moves.");
+    "Al llevarla, se for-\n"
+    "talecen los ataques\n"
+    "de tipo LUCHA.");
 
 static const u8 gItemDescription_Magnet[] = _(
-    "A hold item that\n"
-    "boosts ELECTRIC-\n"
-    "type moves.");
+    "Al llevarla, se for-\n"
+    "talecen los ataques\n"
+    "de tipo ELÉCTRIC.");
 
 static const u8 gItemDescription_MysticWater[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "WATER-type moves.");
+    "Al llevarla, se for-\n"
+    "talecen los ataques\n"
+    "de tipo AGUA.");
 
 static const u8 gItemDescription_SharpBeak[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "FLYING-type moves.");
+    "Al llevarla, se for-\n"
+    "talecen los ataques\n"
+    "de tipo VOLADOR.");
 
 static const u8 gItemDescription_PoisonBarb[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "POISON-type moves.");
+    "Al llevarla, se for-\n"
+    "talecen los ataques\n"
+    "de tipo VENENO.");
 
 static const u8 gItemDescription_NeverMeltIce[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "ICE-type moves.");
+    "Al llevarla, se for-\n"
+    "talecen los ataques\n"
+    "de tipo HIELO.");
 
 static const u8 gItemDescription_SpellTag[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "GHOST-type moves.");
+    "Al llevarla, se for-\n"
+    "talecen los ataques\n"
+    "de tipo FANTASMA.");
 
 static const u8 gItemDescription_TwistedSpoon[] = _(
-    "A hold item that\n"
-    "boosts PSYCHIC-\n"
-    "type moves.");
+    "Al llevarla, se for-\n"
+    "talecen los ataques\n"
+    "de tipo PSÍQUICO.");
 
 static const u8 gItemDescription_Charcoal[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "FIRE-type moves.");
+    "Al llevarla, se for-\n"
+    "talecen los ataques\n"
+    "de tipo FUEGO.");
 
 static const u8 gItemDescription_DragonFang[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "DRAGON-type moves.");
+    "Al llevarla, se for-\n"
+    "talecen los ataques\n"
+    "de tipo DRAGÓN.");
 
 static const u8 gItemDescription_SilkScarf[] = _(
-    "A hold item that\n"
-    "raises the power of\n"
-    "NORMAL-type moves.");
+    "Al llevarla, se for-\n"
+    "talecen los ataques\n"
+    "de tipo NORMAL.");
 
 static const u8 gItemDescription_UpGrade[] = _(
-    "A peculiar box made\n"
-    "by SILPH CO.");
+    "Peculiar caja\n"
+    "hecha en\n"
+	"SILPH S.A.");
 
 static const u8 gItemDescription_ShellBell[] = _(
-    "A hold item that\n"
-    "restores HP upon\n"
-    "striking the foe.");
+    "Al llevarla y vencer\n"
+    "al enemigo,\n"
+    "restaura los PS.");
 
 static const u8 gItemDescription_SeaIncense[] = _(
-    "A hold item that\n"
-    "slightly boosts\n"
-    "WATER-type moves.");
+    "Al llevarlo, los ata-\n"
+    "ques tipo AGUA son\n"
+    "algo más fuertes.");
 
 static const u8 gItemDescription_LaxIncense[] = _(
-    "A hold item that\n"
-    "slightly lowers the\n"
-    "foe's accuracy.");
+    "Al llevarlo, baja\n"
+    "algo la PRECISIÓN\n"
+    "del rival.");
 
 static const u8 gItemDescription_LuckyPunch[] = _(
-    "A hold item that\n"
-    "raises CHANSEY's\n"
-    "critical-hit rate.");
+    "Al llevarlo, CHANSEY\n"
+    "dará posiblemente\n"
+    "un golpe crítico.");
 
 static const u8 gItemDescription_MetalPowder[] = _(
-    "A hold item that\n"
-    "raises DEFENSE.");
+    "Si lo lleva DITTO\n"
+    "su DEFENSA\n"
+	"aumentará.");
 
 static const u8 gItemDescription_ThickClub[] = _(
-    "A bone of some\n"
-    "sort. It can be sold\n"
-    "cheaply.");
+    "Extraño tipo de\n"
+    "hueso. Se vende\n"
+    "a bajo precio.");
 
 static const u8 gItemDescription_Stick[] = _(
-    "A stick of leek.\n"
-    "It can be sold\n"
-    "cheaply.");
+    "Es un puerro.\n"
+    "Se vende\n"
+    "a bajo precio.");
 
 static const u8 gItemDescription_RedScarf[] = _(
-    "A hold item that\n"
-    "raises COOL in\n"
-    "CONTESTS.");
+    "Al llevarlo en los\n"
+    "CONCURSOS\n"
+    "aumenta el CARISMA.");
 
 static const u8 gItemDescription_BlueScarf[] = _(
-    "A hold item that\n"
-    "raises BEAUTY in\n"
-    "CONTESTS.");
+    "Al llevarlo en los\n"
+    "CONCURSOS\n"
+    "aumenta la BELLEZA.");
 
 static const u8 gItemDescription_PinkScarf[] = _(
-    "A hold item that\n"
-    "raises CUTE in\n"
-    "CONTESTS.");
+    "Al llevarlo en los\n"
+    "CONCURSOS\n"
+    "aumenta la DULZURA.");
 
 static const u8 gItemDescription_GreenScarf[] = _(
-    "A hold item that\n"
-    "raises SMART in\n"
-    "CONTESTS.");
+    "Al llevarlo en los\n"
+    "CONCURSOS\n"
+    "aumenta el INGENIO.");
 
 static const u8 gItemDescription_YellowScarf[] = _(
-    "A hold item that\n"
-    "raises TOUGH in\n"
-    "CONTESTS.");
+    "Al llevarlo en los\n"
+    "CONCURSOS\n"
+    "aumenta la DUREZA.");
 
 static const u8 gItemDescription_MachBike[] = _(
-    "A folding bicycle\n"
-    "that more than\n"
-    "doubles foot speed.");
+    "Bici plegable con la\n"
+    "que se va el doble\n"
+    "de rápido que a pie.");
 
 static const u8 gItemDescription_CoinCase[] = _(
-    "A case that holds\n"
-    "up to 9,999 COINS.");
+    "Te servirá para\n"
+    "llevar hasta 9.999\n"
+	"monedas.");
 
 static const u8 gItemDescription_Itemfinder[] = _(
-    "A device that\n"
-    "signals an invisible\n"
-    "item by sound.");
+    "Detector de\n"
+    "objetos invisibles\n"
+    "por ondas sonoras.");
 
 static const u8 gItemDescription_OldRod[] = _(
-    "Use by any body of\n"
-    "water to fish for\n"
-    "wild POKéMON.");
+    "Pesca POKéMON\n"
+    "salvajes en todo\n"
+    "tipo de aguas.");
 
 static const u8 gItemDescription_GoodRod[] = _(
-    "A decent fishing\n"
-    "rod for catching\n"
-    "wild POKéMON.");
+    "Una buena caña\n"
+    "para pescar\n"
+    "POKéMON salvajes.");
 
 static const u8 gItemDescription_SuperRod[] = _(
-    "The best fishing\n"
-    "rod for catching\n"
-    "wild POKéMON.");
+    "Es la mejor caña\n"
+    "para pescar\n"
+    "POKéMON salvajes.");
 
 static const u8 gItemDescription_SSTicket[] = _(
-    "The ticket required\n"
-    "for sailing on a\n"
-    "ferry.");
+    "Es el billete válido\n"
+    "para embarcar.");
 
 static const u8 gItemDescription_ContestPass[] = _(
-    "The pass required\n"
-    "for entering\n"
-    "POKéMON CONTESTS.");
+    "Es necesario para\n"
+    "participar en un\n"
+    "CONCURSO POKéMON.");
 
 static const u8 gItemDescription_WailmerPail[] = _(
-    "A tool used for\n"
-    "watering BERRIES\n"
-    "and plants.");
+    "Sirve para regar las\n"
+    "BAYAS y las plantas.");
 
 static const u8 gItemDescription_DevonGoods[] = _(
-    "A package that\n"
-    "contains DEVON's\n"
-    "machine parts.");
+    "Paquete con todas\n"
+    "las piezas de la\n"
+    "máquina de DEVON.");
 
 static const u8 gItemDescription_SootSack[] = _(
-    "A sack used to\n"
-    "gather and hold\n"
-    "volcanic ash.");
+    "Saco usado para\n"
+    "recoger y guardar\n"
+    "cenizas volcánicas.");
 
 static const u8 gItemDescription_BasementKey[] = _(
-    "The key for NEW\n"
-    "MAUVILLE beneath\n"
-    "MAUVILLE CITY.");
+    "Llave de MALVALA-\n"
+    "NOVA (al sur de\n"
+    "CIUDAD MALVALONA).");
 
 static const u8 gItemDescription_AcroBike[] = _(
-    "A folding bicycle\n"
-    "capable of jumps\n"
-    "and wheelies.");
+    "Bici plegable ideal\n"
+    "para saltar y hacer\n"
+    "caballitos y giros.");
 
 static const u8 gItemDescription_PokeblockCase[] = _(
-    "A case for holding\n"
-    "{POKEBLOCK}S made with\n"
-    "a BERRY BLENDER.");
+    "Tubo para los\n"
+    "{POKEBLOCK}S hechos\n"
+    "con la LICUABAYAS.");
 
 static const u8 gItemDescription_Letter[] = _(
-    "A letter to STEVEN\n"
-    "from the PRESIDENT\n"
-    "of the DEVON CORP.");
+    "Carta para MÁXIMO,\n"
+    "del PRESIDENTE de\n"
+    "DEVON S.A.");
 
 static const u8 gItemDescription_EonTicket[] = _(
-    "The ticket for a\n"
-    "ferry to a distant\n"
-    "southern island.");
+    "El billete necesario\n"
+    "para ir hasta una\n"
+    "lejana isla del sur.");
 
 static const u8 gItemDescription_RedOrb[] = _(
-    "A red, glowing orb\n"
-    "said to contain an\n"
-    "ancient power.");
+    "Es roja y brillante.\n"
+    "Dicen que posee\n"
+    "un poder ancestral.");
 
 static const u8 gItemDescription_BlueOrb[] = _(
-    "A blue, glowing orb\n"
-    "said to contain an\n"
-    "ancient power.");
+    "Es azul y brillante.\n"
+    "Dicen que posee\n"
+    "un poder ancestral.");
 
 static const u8 gItemDescription_Scanner[] = _(
-    "A device found\n"
-    "inside the\n"
-    "ABANDONED SHIP.");
+    "Dispositivo encon-\n"
+    "trado en la NAO\n"
+    "ABANDONADA.");
 
 static const u8 gItemDescription_GoGoggles[] = _(
-    "Nifty goggles that\n"
-    "protect eyes from\n"
-    "desert sandstorms.");
+    "Ingeniosas gafas\n"
+    "que protegen de la\n"
+    "arena del desierto.");
 
 static const u8 gItemDescription_Meteorite[] = _(
-    "A meteorite found\n"
-    "at METEOR FALLS.");
+    "Meteorito encon-\n"
+    "trado en la CASCADA\n"
+	"METEORO.");
 
 static const u8 gItemDescription_Room1Key[] = _(
-    "A key that opens a\n"
-    "door inside the\n"
-    "ABANDONED SHIP.");
+    "Llave de una de las\n"
+    "cabinas de la NAO\n"
+    "ABANDONADA.");
 
 static const u8 gItemDescription_Room2Key[] = _(
-    "A key that opens a\n"
-    "door inside the\n"
-    "ABANDONED SHIP.");
+    "Llave de una de las\n"
+    "cabinas de la NAO\n"
+    "ABANDONADA.");
 
 static const u8 gItemDescription_Room4Key[] = _(
-    "A key that opens a\n"
-    "door inside the\n"
-    "ABANDONED SHIP.");
+    "Llave de una de las\n"
+    "cabinas de la NAO\n"
+    "ABANDONADA.");
 
 static const u8 gItemDescription_Room6Key[] = _(
-    "A key that opens a\n"
-    "door inside the\n"
-    "ABANDONED SHIP.");
+    "Llave de una de las\n"
+    "cabinas de la NAO\n"
+    "ABANDONADA.");
 
 static const u8 gItemDescription_StorageKey[] = _(
-    "The key to the\n"
-    "storage inside the\n"
-    "ABANDONED SHIP.");
+    "Llave del ALMACÉN\n"
+    "de la NAO ABAN-\n"
+    "DONADA.");
 
 static const u8 gItemDescription_RootFossil[] = _(
-    "A fossil of an\n"
-    "ancient, seafloor-\n"
-    "dwelling POKéMON.");
+    "Fósil de un POKéMON\n"
+    "ancestral que vivía\n"
+    "en el fondo del mar.");
 
 static const u8 gItemDescription_ClawFossil[] = _(
-    "A fossil of an\n"
-    "ancient, seafloor-\n"
-    "dwelling POKéMON.");
+    "Fósil de un POKéMON\n"
+    "ancestral que vivía\n"
+    "en el fondo del mar.");
 
 static const u8 gItemDescription_DevonScope[] = _(
-    "A device by DEVON\n"
-    "that signals any\n"
-    "unseeable POKéMON.");
+    "Dispositivo hecho\n"
+    "en DEVON para ver\n"
+    "POKÉMON invisibles.");
 
 static const u8 gItemDescription_TM01[] = _(
-    "Powerful, but makes\n"
-    "the user flinch if\n"
-    "hit by the foe.");
+    "Es potente, pero\n"
+    "hiere al atacante\n"
+    "si el rival le golpea.");
 
 static const u8 gItemDescription_TM02[] = _(
-    "Hooks and slashes\n"
-    "the foe with long,\n"
-    "sharp claws.");
+    "Engancha y araña\n"
+    "al rival con garras\n"
+    "afiladas.");
 
 static const u8 gItemDescription_TM03[] = _(
-    "Generates an\n"
-    "ultrasonic wave\n"
-    "that may confuse.");
+    "Emite una onda\n"
+    "ultrasónica que\n"
+    "puede confundir.");
 
 static const u8 gItemDescription_TM04[] = _(
-    "Raises SP. ATK and\n"
-    "SP. DEF by focusing\n"
-    "the mind.");
+    "Se concentra para\n"
+    "subir el AT.ESP.\n"
+    "y la DEF.ESP.");
 
 static const u8 gItemDescription_TM05[] = _(
-    "A savage roar that\n"
-    "makes the foe flee \n"
-    "to end the battle.");
+    "Tremendo rugido\n"
+    "que hace huir del\n"
+    "combate al rival.");
 
 static const u8 gItemDescription_TM06[] = _(
-    "Poisons the foe\n"
-    "with a toxin that\n"
-    "gradually worsens.");
+    "Envenena con una\n"
+    "toxina que se va\n"
+    "intensificando.");
 
 static const u8 gItemDescription_TM07[] = _(
-    "Summons a hailstorm\n"
-    "that hurts all\n"
-    "types except ICE.");
+    "Tormenta de gra-\n"
+    "nizo dañina salvo\n"
+    "para el tipo HIELO.");
 
 static const u8 gItemDescription_TM08[] = _(
-    "Bulks up the body\n"
-    "to boost both\n"
-    "ATTACK & DEFENSE.");
+    "Robustece el\n"
+    "cuerpo para subir\n"
+    "ATAQUE y DEFENSA.");
 
 static const u8 gItemDescription_TM09[] = _(
-    "Shoots 2 to 5 seeds\n"
-    "in a row to strike\n"
-    "the foe.");
+    "Dispara de 2 a 5\n"
+    "ráfagas de semillas\n"
+    "seguidas.");
 
 static const u8 gItemDescription_TM10[] = _(
-    "The attack power\n"
-    "varies among\n"
-    "different POKéMON.");
+    "La fuerza del\n"
+    "ataque varía según\n"
+    "el POKéMON.");
 
 static const u8 gItemDescription_TM11[] = _(
-    "Raises the power of\n"
-    "FIRE-type moves\n"
-    "for 5 turns.");
+    "Sube los ataques de\n"
+    "tipo FUEGO durante\n"
+    "5 turnos.");
 
 static const u8 gItemDescription_TM12[] = _(
-    "Enrages the foe so\n"
-    "it can only use\n"
-    "attack moves.");
+    "Enfada al rival\n"
+    "para que sólo\n"
+    "use ATAQUES.");
 
 static const u8 gItemDescription_TM13[] = _(
-    "Fires an icy cold\n"
-    "beam that may\n"
-    "freeze the foe.");
+    "Rayo de hielo\n"
+    "que puede llegar\n"
+    "a congelar");
 
 static const u8 gItemDescription_TM14[] = _(
-    "A vicious snow-and-\n"
-    "wind attack that\n"
-    "may freeze the foe.");
+    "Tormenta de viento\n"
+    "y nieve que puede\n"
+    "llegar a congelar.");
 
 static const u8 gItemDescription_TM15[] = _(
-    "Powerful, but needs\n"
-    "recharging the\n"
-    "next turn.");
+    "Es eficaz, pero\n"
+    "necesita 1 turno\n"
+    "para recargarse.");
 
 static const u8 gItemDescription_TM16[] = _(
-    "Creates a wall of\n"
-    "light that lowers\n"
-    "SP. ATK damage.");
+    "Pared de luz que\n"
+    "reduce el daño del\n"
+    "AT.ESP.");
 
 static const u8 gItemDescription_TM17[] = _(
-    "Negates all damage,\n"
-    "but may fail if used\n"
-    "in succession.");
+    "Anula los daños,\n"
+    "pero puede fallar\n"
+    "si se usa sin parar");
 
 static const u8 gItemDescription_TM18[] = _(
-    "Raises the power of\n"
-    "WATER-type moves\n"
-    "for 5 turns.");
+    "Sube los ataques\n"
+    "de tipo AGUA\n"
+    "durante 5 turnos.");
 
 static const u8 gItemDescription_TM19[] = _(
-    "Recovers half the\n"
-    "HP of the damage \n"
-    "this move inflicts.");
+    "Recupera la mitad\n"
+    "de PS del daño\n"
+    "que produce.");
 
 static const u8 gItemDescription_TM20[] = _(
-    "Prevents status\n"
-    "abnormality with a\n"
-    "mystical power.");
+    "Evita alteraciones\n"
+    "de estado usando\n"
+    "un poder secreto.");
 
 static const u8 gItemDescription_TM21[] = _(
-    "The less the user\n"
-    "likes you, the more\n"
-    "powerful this move.");
+    "Cuanto menos le\n"
+    "gustes al POKéMON\n"
+    "más fuerte ataca.");
 
 static const u8 gItemDescription_TM22[] = _(
-    "Absorbs sunlight in\n"
-    "the 1st turn, then\n"
-    "attacks next turn.");
+    "1.er turno: toma\n"
+    "luz.\n"
+    "2.ndo turno: ataca.");
 
 static const u8 gItemDescription_TM23[] = _(
-    "Slams the foe with\n"
-    "a hard tail. It may\n"
-    "lower DEFENSE.");
+    "Golpea con un gran\n"
+    "coletazo y puede\n"
+    "bajar la DEFENSA.");
 
 static const u8 gItemDescription_TM24[] = _(
-    "A powerful electric\n"
-    "attack that may\n"
-    "cause paralysis.");
+    "Duro ataque eléc-\n"
+    "trico que puede\n"
+    "paralizar al rival.");
 
 static const u8 gItemDescription_TM25[] = _(
-    "Strikes the foe\n"
-    "with a thunderbolt.\n"
-    "It may paralyze.");
+    "Ataca con un\n"
+    "rayo que puede\n"
+    "paralizar al rival.");
 
 static const u8 gItemDescription_TM26[] = _(
-    "Causes a quake\n"
-    "that has no effect\n"
-    "on flying foes.");
+    "Provoca un temblor\n"
+    "que no afecta a los\n"
+    "voladores.");
 
 static const u8 gItemDescription_TM27[] = _(
-    "The more the user\n"
-    "likes you, the more\n"
-    "powerful this move.");
+    "Cuanto más le\n"
+    "gustes al POKéMON\n"
+    "más fuerte ataca.");
 
 static const u8 gItemDescription_TM28[] = _(
-    "Digs underground\n"
-    "the 1st turn, then\n"
-    "strikes next turn.");
+    "1.er turno: cava\n"
+    "2.ndo turno: ataca.");
 
 static const u8 gItemDescription_TM29[] = _(
-    "A powerful psychic\n"
-    "attack that may\n"
-    "lower SP. DEF.");
+    "Fuerte ataque psí-\n"
+    "quico que puede\n"
+    "bajar la DEF.ESP.");
 
 static const u8 gItemDescription_TM30[] = _(
-    "Hurls a dark lump\n"
-    "at the foe. It may\n"
-    "lower SP. DEF.");
+    "Lanza una bola\n"
+    "negra que puede\n"
+    "bajar la DEF.ESP.");
 
 static const u8 gItemDescription_TM31[] = _(
-    "Destroys barriers\n"
-    "like LIGHT SCREEN\n"
-    "and causes damage.");
+    "Destruye barreras\n"
+    "como PANTALLA LUZ\n"
+    "y causa daño.");
 
 static const u8 gItemDescription_TM32[] = _(
-    "Creates illusory\n"
-    "copies to enhance\n"
-    "elusiveness.");
+    "Crea ilusiones para\n"
+    "mejorar la EVASIÓN.");
 
 static const u8 gItemDescription_TM33[] = _(
-    "Creates a wall of\n"
-    "light that weakens\n"
-    "physical attacks.");
+    "Pared de luz que\n"
+    "baja los ataques\n"
+    "físicos.");
 
 static const u8 gItemDescription_TM34[] = _(
-    "Zaps the foe with a\n"
-    "jolt of electricity\n"
-    "that never misses.");
+    "Propina un ataque\n"
+    "eléctrico rápido\n"
+    "e ineludible.");
 
 static const u8 gItemDescription_TM35[] = _(
-    "Looses a stream of\n"
-    "fire that may burn\n"
-    "the foe.");
+    "Lanza un chorro de\n"
+    "fuego que puede\n"
+    "causar quemaduras.");
 
 static const u8 gItemDescription_TM36[] = _(
-    "Hurls sludge at the\n"
-    "foe. It may poison\n"
-    "the foe.");
+    "Descarga de lodo\n"
+    "que puede llegar\n"
+    "a envenenar.");
 
 static const u8 gItemDescription_TM37[] = _(
-    "Causes a sandstorm\n"
-    "that hits the foe\n"
-    "over several turns.");
+    "Tormenta de arena\n"
+    "que dura varios\n"
+    "turnos.");
 
 static const u8 gItemDescription_TM38[] = _(
-    "A powerful fire\n"
-    "attack that may\n"
-    "burn the foe.");
+    "Potente ataque de\n"
+    "fuego que puede\n"
+    "quemar al rival.");
 
 static const u8 gItemDescription_TM39[] = _(
-    "Stops the foe from\n"
-    "moving with rocks.\n"
-    "May lower SPEED.");
+    "Inmoviliza al rival\n"
+    "con rocas. Puede\n"
+    "bajar la VELOCIDAD.");
 
 static const u8 gItemDescription_TM40[] = _(
-    "An extremely fast\n"
-    "attack that can't\n"
-    "be avoided.");
+    "Ataque tremen-\n"
+    "damente rápido\n"
+    "e ineludible.");
 
 static const u8 gItemDescription_TM41[] = _(
-    "Prevents the foe\n"
-    "from using the same\n"
-    "move in a row.");
+    "Impide al rival que\n"
+    "use un ataque de\n"
+    "forma continuada.");
 
 static const u8 gItemDescription_TM42[] = _(
-    "Raises ATTACK when\n"
-    "poisoned, burned,\n"
-    "or paralyzed.");
+    "Sube el ATAQUE al\n"
+    "estar quemado,\n"
+    "paraliz. o enven.");
 
 static const u8 gItemDescription_TM43[] = _(
-    "Adds an effect to\n"
-    "attack depending\n"
-    "on the location.");
+    "Tiene efectos\n"
+    "distintos según\n"
+    "la zona.");
 
 static const u8 gItemDescription_TM44[] = _(
-    "The user sleeps for\n"
-    "2 turns to restore\n"
-    "health and status.");
+    "El POKéMON duerme\n"
+    "2 turnos y restaura\n"
+    "su salud y estado.");
 
 static const u8 gItemDescription_TM45[] = _(
-    "Makes it tough to\n"
-    "attack a foe of the\n"
-    "opposite gender.");
+    "Hace difícil atacar\n"
+    "a un rival del otro\n"
+    "género.");
 
 static const u8 gItemDescription_TM46[] = _(
-    "While attacking,\n"
-    "it may steal the\n"
-    "foe's held item.");
+    "Al atacar, puede\n"
+    "quitar al rival\n"
+    "el objeto que lleve.");
 
 static const u8 gItemDescription_TM47[] = _(
-    "Spreads hard-edged\n"
-    "wings and slams\n"
-    "into the foe.");
+    "Bate las rígidas\n"
+    "alas para golpear\n"
+    "al rivar.");
 
 static const u8 gItemDescription_TM48[] = _(
-    "Switches abilities\n"
-    "with the foe on the\n"
-    "turn this is used.");
+    "Intercambia la\n"
+    "habilidad especial\n"
+    "durante 1 turno.");
 
 static const u8 gItemDescription_TM49[] = _(
-    "Steals the effects\n"
-    "of the move the foe\n"
-    "is trying to use.");
+    "Roba el efecto del\n"
+    "ataque que el rival\n"
+    "intenta usar.");
 
 static const u8 gItemDescription_TM50[] = _(
-    "Enables full-power\n"
-    "attack, but sharply\n"
-    "lowers SP. ATK.");
+    "Ataca con toda la\n"
+    "fuerza, pero baja\n"
+    "mucho el AT.ESP.");
 
 static const u8 gItemDescription_HM01[] = _(
-    "Attacks the foe\n"
-    "with sharp blades\n"
-    "or claws.");
+    "Corta con finas\n"
+    "cuchillas, afiladas\n"
+    "garras, etc.");
 
 static const u8 gItemDescription_HM02[] = _(
-    "Flies up on the\n"
-    "first turn, then\n"
-    "attacks next turn.");
+    "1.er turno: vuela\n"
+    "2.ndo turno: ataca.");
 
 static const u8 gItemDescription_HM03[] = _(
-    "Creates a huge\n"
-    "wave, then crashes\n"
-    "it down on the foe.");
+    "Crea una ola\n"
+    "gigante y la lanza\n"
+    "contra el enemigo.");
 
 static const u8 gItemDescription_HM04[] = _(
-    "Builds enormous\n"
-    "power, then slams\n"
-    "the foe.");
+    "Genera mucha\n"
+    "fuerza y ataca con\n"
+    "energía al rival.");
 
 static const u8 gItemDescription_HM05[] = _(
-    "Looses a powerful\n"
-    "blast of light that\n"
-    "reduces accuracy.");
+    "Lanza una intensa\n"
+    "ráfaga de luz que\n"
+    "baja la PRECISIÓN.");
 
 static const u8 gItemDescription_HM06[] = _(
-    "A rock-crushingly\n"
-    "tough attack that\n"
-    "may lower DEFENSE.");
+    "Ataque demoledor\n"
+    "que puede bajar\n"
+    "la DEFENSA.");
 
 static const u8 gItemDescription_HM07[] = _(
-    "Attacks the foe\n"
-    "with enough power\n"
-    "to climb waterfalls.");
+    "Embiste con impulso\n"
+    "como para remontar\n"
+    "una cascada.");
 
 static const u8 gItemDescription_HM08[] = _(
-    "Dives underwater\n"
-    "the 1st turn, then\n"
-    "attacks next turn.");
+    "1.er turno: bucea\n"
+    "2.ndo turno: golpea.");
 
 static const u8 gItemDescription_Dummy[] = _("");

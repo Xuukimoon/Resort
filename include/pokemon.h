@@ -290,6 +290,10 @@ struct BaseStats
              u8 noFlip:1;
 };
 
+
+#define MOVE_PHYSICALITY_PHYSICAL	0
+#define MOVE_PHYSICALITY_SPECIAL	1
+#define MOVE_PHYSICALITY_OTHER		2
 struct BattleMove
 {
     u8 effect;
@@ -301,6 +305,7 @@ struct BattleMove
     u8 target;
     s8 priority;
     u8 flags;
+	u8 physicality;
 };
 
 struct PokemonStorage
@@ -317,9 +322,11 @@ struct SpindaSpot
     u16 image[16];
 };
 
+#define MAX_MOVES_PER_LEARNSET 30
+#define LEVEL_UP_END 0xFFFFFFFF
 struct __attribute__((packed)) LevelUpMove {
-    u16 move:9;
-    u16 level:7;
+    u16 move;//:9;
+    u16 level;//:7;
 };
 
 enum {
@@ -359,6 +366,20 @@ enum {
 #define EVO_LEVEL_NINJASK    0x000d // Pokémon reaches the specified level (special value for Ninjask)
 #define EVO_LEVEL_SHEDINJA   0x000e // Pokémon reaches the specified level (special value for Shedinja)
 #define EVO_BEAUTY           0x000f // Pokémon levels up with beauty ≥ specified value
+#define EVO_LEVEL_MALE       0x0010 // Pokémon reaches specified level while male //inician nuevos metodos evolutivos
+#define EVO_LEVEL_FEMALE     0x0011 // Pokémon reaches specified level while female
+#define EVO_ITEM_MALE        0x0012 // specified item is used on male Pokémon
+#define EVO_ITEM_FEMALE      0x0013 // specified item is used on female Pokémon
+#define EVO_MOVE             0x0014 // Pokémon levels up with specified move
+#define EVO_MAPNUM           0x0015 // Pokémon levels up in specified map number
+#define EVO_LEVEL_DAY        0x0016 // Pokémon reaches specified level in the day
+#define EVO_LEVEL_NIGHT      0x0017 // Pokémon reaches specified level in the night
+#define EVO_ITEM_DAY         0x0018 // Pokémon levels up while holding specified item during the day
+#define EVO_ITEM_NIGHT       0x0019 // Pokémon levels up while holding specified item during the night
+#define EVO_LEVEL_MON        0x001a // Pokémon levels up while specified mon is in the party
+#define EVO_LEVEL_DARK       0x001b // Pokémon reaches specified level while a Dark-type Pokémon is in the party
+#define EVO_LEVEL_RAIN       0x001c // Pokémon reaches specified level while raining in the overworld
+//#define EVO_TRADE_MON        0X001d // Pokémon is traded with specified Pokémon
 
 struct Evolution
 {
@@ -379,7 +400,7 @@ extern struct Pokemon gEnemyParty[PARTY_SIZE];
 extern const u8 *const gItemEffectTable[];
 extern const struct BaseStats gBaseStats[];
 extern const u32 gExperienceTables[][101];
-extern const u16 *gLevelUpLearnsets[];
+extern const u32 *gLevelUpLearnsets[];//u16
 extern struct Evolution gEvolutionTable[][5];
 extern struct PokemonStorage gPokemonStorage;
 

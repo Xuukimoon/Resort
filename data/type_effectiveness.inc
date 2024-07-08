@@ -113,6 +113,46 @@ gTypeEffectiveness:: @ 81F9720
 	.byte    TYPE_STEEL,      TYPE_ICE, 20
 	.byte    TYPE_STEEL,     TYPE_ROCK, 20
 	.byte    TYPE_STEEL,    TYPE_STEEL,  5
+	.byte    TYPE_FAIRY, TYPE_FIGHTING, 20
+	.byte    TYPE_FAIRY,   TYPE_DRAGON, 20
+	.byte    TYPE_FAIRY,     TYPE_DARK, 20
+	.byte    TYPE_FAIRY,   TYPE_POISON,  5
+	.byte    TYPE_FAIRY,    TYPE_STEEL,  5
+	.byte    TYPE_FAIRY,     TYPE_FIRE,  5
+	.byte    TYPE_STEEL,    TYPE_FAIRY, 20
+	.byte   TYPE_POISON,    TYPE_FAIRY, 20
+	.byte TYPE_FIGHTING,    TYPE_FAIRY,  5
+	.byte      TYPE_BUG,    TYPE_FAIRY,  5
+	.byte     TYPE_DARK,    TYPE_FAIRY,  5
+	.byte   TYPE_DRAGON,    TYPE_FAIRY,  0
+	.byte     TYPE_ETER,   TYPE_NORMAL,  5
+	.byte     TYPE_ETER,     TYPE_FIRE, 20
+	.byte     TYPE_ETER,    TYPE_WATER, 20
+	.byte     TYPE_ETER, TYPE_FIGHTING,  5
+	.byte     TYPE_ETER,   TYPE_GROUND, 20
+	.byte     TYPE_ETER,   TYPE_FLYING, 20
+	.byte     TYPE_ETER,   TYPE_DRAGON,  5
+	.byte     TYPE_ETER,     TYPE_DARK, 20
+	.byte     TYPE_ETER,    TYPE_FAIRY,  5
+	.byte   TYPE_NORMAL,     TYPE_ETER, 20
+	.byte     TYPE_FIRE,     TYPE_ETER,  5
+	.byte    TYPE_WATER,     TYPE_ETER,  5
+	.byte   TYPE_FLYING,     TYPE_ETER,  5
+	.byte   TYPE_DRAGON,     TYPE_ETER, 20
+	.byte     TYPE_DARK,     TYPE_ETER,  0
+	.byte    TYPE_FAIRY,     TYPE_ETER, 20
+	.byte    TYPE_LIGHT,    TYPE_GRASS,  5
+	.byte    TYPE_LIGHT, TYPE_FIGHTING, 20
+	.byte    TYPE_LIGHT,  TYPE_PSYCHIC,  5
+	.byte    TYPE_LIGHT,     TYPE_ROCK,  5
+	.byte    TYPE_LIGHT,     TYPE_DARK, 20
+	.byte    TYPE_LIGHT,    TYPE_STEEL, 20
+	.byte    TYPE_LIGHT,    TYPE_LIGHT,  5
+	.byte TYPE_FIGHTING,    TYPE_LIGHT,  5
+	.byte   TYPE_POISON,    TYPE_LIGHT, 20
+	.byte    TYPE_GHOST,    TYPE_LIGHT, 20
+	.byte     TYPE_DARK,    TYPE_LIGHT, 20
+	.byte    TYPE_FAIRY,    TYPE_LIGHT,  5
 	.byte          0xFE,          0xFE,  0
 	.byte   TYPE_NORMAL,    TYPE_GHOST,  0
 	.byte TYPE_FIGHTING,    TYPE_GHOST,  0
