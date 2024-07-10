@@ -1691,3 +1691,6 @@ Text_1C6C62: @ 81C6C62
 
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
+
+	.include "data/maps/Test/scripts.inc"
+	.include "data/maps/Test/text.inc"

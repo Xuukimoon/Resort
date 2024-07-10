@@ -1459,3 +1459,22 @@ gTilesetPalettes_BattleTower:: @ 8259A1C
 	.incbin "data/tilesets/secondary/battle_tower/palettes/13.gbapal"
 	.incbin "data/tilesets/secondary/battle_tower/palettes/14.gbapal"
 	.incbin "data/tilesets/secondary/battle_tower/palettes/15.gbapal"
+
+	.align 2
+gTilesetPalettes_resort::
+	.incbin "data/tilesets/primary/resort/palettes/00.gbapal"
+	.incbin "data/tilesets/primary/resort/palettes/01.gbapal"
+	.incbin "data/tilesets/primary/resort/palettes/02.gbapal"
+	.incbin "data/tilesets/primary/resort/palettes/03.gbapal"
+	.incbin "data/tilesets/primary/resort/palettes/04.gbapal"
+	.incbin "data/tilesets/primary/resort/palettes/05.gbapal"
+	.incbin "data/tilesets/primary/resort/palettes/06.gbapal"
+	.incbin "data/tilesets/primary/resort/palettes/07.gbapal"
+	.incbin "data/tilesets/primary/resort/palettes/08.gbapal"
+	.incbin "data/tilesets/primary/resort/palettes/09.gbapal"
+	.incbin "data/tilesets/primary/resort/palettes/10.gbapal"
+	.incbin "data/tilesets/primary/resort/palettes/11.gbapal"
+
+	.align 2
+gTilesetTiles_resort::
+	.incbin "data/tilesets/primary/resort/tiles.4bpp.lz"

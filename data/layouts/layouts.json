@@ -3320,6 +3320,16 @@
       "secondary_tileset": "gTileset_Pacifidlog",
       "border_filepath": "data/layouts/SkyPillar_Top/border.bin",
       "blockdata_filepath": "data/layouts/SkyPillar_Top/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEST",
+      "name": "Test_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_resort",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Test/border.bin",
+      "blockdata_filepath": "data/layouts/Test/map.bin"
     }
   ]
 }

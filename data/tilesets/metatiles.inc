@@ -422,3 +422,11 @@ gMetatiles_BattleTower:: @ 82863BE
 gMetatileAttributes_BattleTower:: @ 8286BEE
 	.incbin "data/tilesets/secondary/battle_tower/metatile_attributes.bin"
 
+
+	.align 1
+gMetatiles_resort::
+	.incbin "data/tilesets/primary/resort/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_resort::
+	.incbin "data/tilesets/primary/resort/metatile_attributes.bin"

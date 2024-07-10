@@ -693,3 +693,14 @@ gTileset_BattleTower:: @ 828724C
 	.4byte gMetatiles_BattleTower
 	.4byte gMetatileAttributes_BattleTower
 	.4byte NULL @ animation callback
+
+	.align 2
+gTileset_resort::
+	.byte TRUE @ is compressed
+	.byte FALSE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_resort
+	.4byte gTilesetPalettes_resort
+	.4byte gMetatiles_resort
+	.4byte gMetatileAttributes_resort
+	.4byte NULL
