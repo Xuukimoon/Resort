@@ -467,6 +467,9 @@ gSongTable:: @ 845548C
 	song bgm_battle35, 0, 0              @ Battle! Rival
 	song bgm_battle38, 0, 0              @ Battle! Elite Four
 	song bgm_battle30, 0, 0              @ Battle! Archie/Maxie
+	song zGoldenrodCity, 0, 0			 @ Goldenrod City 
+	song pokeathlon, 0, 0				 @ Pokeathlon Finals!
+	song zFukko0, 0, 0					 @ Hurry Starfish
 	song bgm_radio_tower_occupied, 0, 0  @ GSC - Radio Tower Takeover!
 
 	.align 2

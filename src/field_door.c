@@ -324,7 +324,7 @@ const u8 DoorAnimPalettes_830F8BC[] = {0, 0, 1, 1, 1, 1, 1, 1}; // door 03
 const u8 DoorAnimPalettes_830F8C4[] = {6, 6, 6, 6, 6, 6, 6, 6}; // door 04
 const u8 DoorAnimPalettes_830F8CC[] = {8, 8, 8, 8, 8, 8, 8, 8}; // door 05
 const u8 DoorAnimPalettes_830F8D4[] = {11, 11, 11, 11, 11, 11, 11, 11}; // door 06
-const u8 DoorAnimPalettes_830F8DC[] = {10, 10, 10, 10, 10, 10, 10, 10}; // door 07
+const u8 DoorAnimPalettes_830F8DC[] = {3, 3, 3, 3, 3, 3, 3, 3}; // door 07
 const u8 DoorAnimPalettes_830F8E4[] = {7, 7, 7, 7, 7, 7, 7, 7}; // door 08
 const u8 DoorAnimPalettes_830F8EC[] = {8, 8, 8, 8, 8, 8, 8, 8}; // door 09
 const u8 DoorAnimPalettes_830F8F4[] = {9, 9, 9, 9, 9, 9, 9, 9}; // door 10
@@ -361,7 +361,7 @@ static const struct DoorGraphics gDoorAnimGraphicsTable[] =
     {0x248, 0, DoorAnimTiles_04, DoorAnimPalettes_830F8C4}, // door 04
     {0x249, 0, DoorAnimTiles_05, DoorAnimPalettes_830F8CC}, // door 05
     {0x22F, 0, DoorAnimTiles_06, DoorAnimPalettes_830F8D4}, // door 06
-    {0x21F, 0, DoorAnimTiles_07, DoorAnimPalettes_830F8DC}, // door 07
+    {0x05A, 0, DoorAnimTiles_07, DoorAnimPalettes_830F8DC}, // door 07
     {0x2A5, 0, DoorAnimTiles_08, DoorAnimPalettes_830F8E4}, // door 08
     {0x287, 0, DoorAnimTiles_09, DoorAnimPalettes_830F8F4}, // door 09
     {0x2AC, 0, DoorAnimTiles_10, DoorAnimPalettes_830F934}, // door 10

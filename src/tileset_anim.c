@@ -60,9 +60,9 @@ static void sub_807399C(u16);
 static void sub_8073974(u16);
 static void sub_80739EC(u16);
 
-static const u8 gTilesetAnims_General0_Frame1[] = INCBIN_U8("data/tilesets/primary/general/anim/0/1.4bpp");
-static const u8 gTilesetAnims_General0_Frame0[] = INCBIN_U8("data/tilesets/primary/general/anim/0/0.4bpp");
-static const u8 gTilesetAnims_General0_Frame2[] = INCBIN_U8("data/tilesets/primary/general/anim/0/2.4bpp");
+static const u8 gTilesetAnims_General0_Frame1[] = INCBIN_U8("data/tilesets/primary/resort/anim/0/1.4bpp");
+static const u8 gTilesetAnims_General0_Frame0[] = INCBIN_U8("data/tilesets/primary/resort/anim/0/0.4bpp");
+static const u8 gTilesetAnims_General0_Frame2[] = INCBIN_U8("data/tilesets/primary/resort/anim/0/2.4bpp");
 asm(".space 32");
 
 static const u8 *const gTilesetAnims_General0[] =
@@ -542,6 +542,13 @@ static void StartTileset2Animation(void)
 }
 
 void TilesetCB_General(void)
+{
+    gTileset1AnimFrame = 0;
+    gTileset1AnimLength = 0x100;
+    gTileset1AnimCallback = sub_8073014;
+}
+
+void TilesetCB_resort(void)
 {
     gTileset1AnimFrame = 0;
     gTileset1AnimLength = 0x100;

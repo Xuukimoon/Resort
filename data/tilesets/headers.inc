@@ -703,4 +703,4 @@ gTileset_resort::
 	.4byte gTilesetPalettes_resort
 	.4byte gMetatiles_resort
 	.4byte gMetatileAttributes_resort
-	.4byte NULL
+	.4byte TilesetCB_resort

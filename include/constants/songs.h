@@ -367,6 +367,9 @@
 #define MUS_BATTLE35 464        // Battle! Rival
 #define MUS_BATTLE38 465        // Battle! Elite Four
 #define MUS_BATTLE30 466        // Battle! Archie/Maxie
+#define MUS_GOLDENROD 467		// Goldenrod City
+#define MUS_POKEATHLON 468		// Pokeathlon Finals
+#define MUS_FUKKO 469			// Hurry Starfish
 
 #define MUS_ROUTE_118 0x7FFF  // What is this for?
 
