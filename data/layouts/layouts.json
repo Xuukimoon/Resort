@@ -3330,6 +3330,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Test/border.bin",
       "blockdata_filepath": "data/layouts/Test/map.bin"
+    },
+    {
+      "id": "LAYOUT_RANCH",
+      "name": "Ranch_Layout",
+      "width": 40,
+      "height": 30,
+      "primary_tileset": "gTileset_resort",
+      "secondary_tileset": "gTileset_ranch",
+      "border_filepath": "data/layouts/Ranch/border.bin",
+      "blockdata_filepath": "data/layouts/Ranch/map.bin"
     }
   ]
 }

@@ -470,6 +470,7 @@ gSongTable:: @ 845548C
 	song zGoldenrodCity, 0, 0			 @ Goldenrod City 
 	song pokeathlon, 0, 0				 @ Pokeathlon Finals!
 	song zFukko0, 0, 0					 @ Hurry Starfish
+	song zCamptown, 0, 0				 @ Camptown Races
 	song bgm_radio_tower_occupied, 0, 0  @ GSC - Radio Tower Takeover!
 
 	.align 2

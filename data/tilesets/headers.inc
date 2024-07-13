@@ -704,3 +704,14 @@ gTileset_resort::
 	.4byte gMetatiles_resort
 	.4byte gMetatileAttributes_resort
 	.4byte TilesetCB_resort
+
+	.align 2
+gTileset_ranch::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_ranch
+	.4byte gTilesetPalettes_ranch
+	.4byte gMetatiles_ranch
+	.4byte gMetatileAttributes_ranch
+	.4byte NULL

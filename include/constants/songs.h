@@ -370,6 +370,7 @@
 #define MUS_GOLDENROD 467		// Goldenrod City
 #define MUS_POKEATHLON 468		// Pokeathlon Finals
 #define MUS_FUKKO 469			// Hurry Starfish
+#define MUS_CAMPTOWN 470		// Camptown Races
 
 #define MUS_ROUTE_118 0x7FFF  // What is this for?
 

@@ -430,3 +430,10 @@ gMetatiles_resort::
 	.align 1
 gMetatileAttributes_resort::
 	.incbin "data/tilesets/primary/resort/metatile_attributes.bin"
+	.align 1
+gMetatiles_ranch::
+	.incbin "data/tilesets/secondary/ranch/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_ranch::
+	.incbin "data/tilesets/secondary/ranch/metatile_attributes.bin"

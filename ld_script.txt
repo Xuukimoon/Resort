@@ -1212,6 +1212,7 @@ SECTIONS {
 		sound/songs/zGoldenrodCity.o(.rodata);
 		sound/songs/pokeathlon.o(.rodata);
 		sound/songs/zFukko0.o(.rodata);
+		sound/songs/zCamptown.o(.rodata);
         sound/songs/bgm_radio_tower_occupied.o(.rodata);
     } =0
 
