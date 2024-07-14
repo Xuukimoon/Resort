@@ -45,6 +45,13 @@
       "elevation": 0,
       "dest_map": "MAP_TEST",
       "dest_warp_id": 0
+    },
+    {
+      "x": 23,
+      "y": 20,
+      "elevation": 0,
+      "dest_map": "MAP_RANCH",
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [
