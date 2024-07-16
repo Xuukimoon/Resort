@@ -89,13 +89,14 @@ static const struct FrameGraphics sTextWindowFrameGraphics[20] =
     {gTextWindowFrame20_Gfx, gTextWindowFrame20_Pal},
 };
 
-static const u16 sDialogueFrameTilemap[5][7] =
+static const u16 sDialogueFrameTilemap[6][7] =
 {
-    {1,      3,      4,      4,      5,      6,      9},
-    {11,     9,      9,      9,      9,      0x040B, 9},
-    {7,      9,      9,      9,      9,      10,     9},
-    {0x080B, 9,      9,      9,      9,      0x0C0B, 9},
-    {0x0801, 0x0803, 0x0804, 0x0804, 0x0805, 0x0806, 9},
+    {1,      2,      3,      3,      4,      0x0401, 0},
+    {7,      8,      9,      9,      10,     0x0407, 0},
+    {5,      6,      9,      9,      11,     0x0407, 0},
+    {12,    13,      9,      9,      11,     0x0407, 0},
+    {7,      8,      9,      9,  0x080A,     0x0407, 0},
+    {0x0801, 0x0802, 0x0803, 0x0803, 0x0804, 0x0C01, 0},
 };
 
 u16 TextWindow_SetBaseTileNum(u16 baseTileNum)
@@ -219,17 +220,17 @@ static u16 GetDialogueFrameTilemapEntry(u16 baseTilemapEntry, u8 x, u8 y, u8 wid
 {
     u16 tilemapEntry = 9;
 
-    if (y >= height)
-        y = y - height + 3;
-    else if (y > 1)
-        y = 2;
+    //if (y >= height)//Altura y repeticion del cuadro de dialogo
+    //    y = y - height + 3;//Altura y repeticion del cuadro de dialogo
+    //else if (y > 1)//Altura y repeticion del cuadro de dialogo
+    //    y = 2;//Altura y repeticion del cuadro de dialogo
 
     if (x >= width + 2)
         x = x - (width + 2) + 4;
     else if (x > 2)
         x = 3;
 
-    if (x < 7 && y < 5)
+    if (x < 7 && y < 6)//y<5
         tilemapEntry = sDialogueFrameTilemap[y][x];
 
     tilemapEntry += baseTilemapEntry;

@@ -1,16 +1,17 @@
 Test_MapScripts::
 	.byte 0
 
-Resort_Ini_Letros::
-	msgbox Resort_Ini_Letros_Men1, MSGBOX_NPC
+Resort_Ini_Town::
+	msgbox Resort_Ini_Town_Men1, MSGBOX_SIGN
 	end
 
 Resort_Ini_Esponjo::
-	msgbox Resort_Ini_Esponjo_Men1, MSGBOX_NPC
+	msgbox Resort_Ini_Esponjo_Men1, MSGBOX_SIGN
 	end	
 	
-Resort_Ini_Letros_Men1::
-	.string "Frander es gey.$"
+Resort_Ini_Town_Men1::
+	.string "PUEBLO GENERICO.\n"
+	.string "Descripcion fea.$"
 	
 Resort_Ini_Esponjo_Men1::
 	.string "La tecnologia es increible.\p"
