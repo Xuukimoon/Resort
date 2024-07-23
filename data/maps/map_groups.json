@@ -1,5 +1,4 @@
 {
-  "layouts_table_label": "gMapLayouts",
   "group_order": [
     "gMapGroup0",
     "gMapGroup1",
@@ -92,7 +91,8 @@
     "Underwater3",
     "Underwater4",
     "Test",
-    "Ranch"
+    "Ranch",
+    "RouteRanch"
   ],
   "gMapGroup1": [
     "LittlerootTown_BrendansHouse_1F",

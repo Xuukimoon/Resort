@@ -3327,7 +3327,7 @@
       "width": 30,
       "height": 30,
       "primary_tileset": "gTileset_resort",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_ranch",
       "border_filepath": "data/layouts/Test/border.bin",
       "blockdata_filepath": "data/layouts/Test/map.bin"
     },
@@ -3340,6 +3340,16 @@
       "secondary_tileset": "gTileset_ranch",
       "border_filepath": "data/layouts/Ranch/border.bin",
       "blockdata_filepath": "data/layouts/Ranch/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE_RANCH",
+      "name": "RouteRanch_Layout",
+      "width": 20,
+      "height": 25,
+      "primary_tileset": "gTileset_resort",
+      "secondary_tileset": "gTileset_ranch",
+      "border_filepath": "data/layouts/RouteRanch/border.bin",
+      "blockdata_filepath": "data/layouts/RouteRanch/map.bin"
     }
   ]
 }

@@ -9,7 +9,13 @@
   "map_type": "MAP_TYPE_TOWN",
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": [
+    {
+      "map": "MAP_ROUTE_RANCH",
+      "offset": 5,
+      "direction": "up"
+    }
+  ],
   "object_events": [
 
   ],
@@ -19,14 +25,14 @@
       "y": 19,
       "elevation": 0,
       "dest_map": "MAP_TEST",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 23,
       "y": 20,
       "elevation": 0,
       "dest_map": "MAP_RANCH",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

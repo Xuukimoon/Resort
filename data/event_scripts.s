@@ -1697,3 +1697,6 @@ Text_1C6C62: @ 81C6C62
 
 	.include "data/maps/Ranch/scripts.inc"
 	.include "data/maps/Ranch/text.inc"
+
+	.include "data/maps/RouteRanch/scripts.inc"
+	.include "data/maps/RouteRanch/text.inc"
