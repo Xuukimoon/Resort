@@ -11,9 +11,9 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE_RANCH",
-      "offset": 11,
-      "direction": "down"
+      "direction": "down",
+      "offset": 9,
+      "map": "MAP_ROUTE_RANCH"
     }
   ],
   "object_events": [
@@ -112,17 +112,17 @@
   "warp_events": [
     {
       "x": 15,
-      "y": 9,
+      "y": 8,
       "elevation": 0,
       "dest_map": "MAP_RANCH",
-      "dest_warp_id": "0"
+      "dest_warp_id": 0
     },
     {
       "x": 24,
-      "y": 9,
+      "y": 8,
       "elevation": 0,
       "dest_map": "MAP_TEST",
-      "dest_warp_id": "0"
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

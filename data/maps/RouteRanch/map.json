@@ -6,19 +6,19 @@
   "region_map_section": "MAPSEC_NONE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_0",
+  "map_type": "MAP_TYPE_ROUTE",
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_RANCH",
-      "offset": -11,
-      "direction": "up"
+      "direction": "up",
+      "offset": -9,
+      "map": "MAP_RANCH"
     },
     {
-      "map": "MAP_TEST",
+      "direction": "down",
       "offset": -5,
-      "direction": "down"
+      "map": "MAP_TEST"
     }
   ],
   "object_events": [

@@ -11,9 +11,9 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE_RANCH",
+      "direction": "up",
       "offset": 5,
-      "direction": "up"
+      "map": "MAP_ROUTE_RANCH"
     }
   ],
   "object_events": [
@@ -21,18 +21,18 @@
   ],
   "warp_events": [
     {
-      "x": 8,
-      "y": 19,
+      "x": 22,
+      "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_TEST",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_INSIDE_OF_TRUCK",
+      "dest_warp_id": 0
     },
     {
-      "x": 23,
-      "y": 20,
+      "x": 25,
+      "y": 19,
       "elevation": 0,
       "dest_map": "MAP_RANCH",
-      "dest_warp_id": "0"
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [
@@ -41,23 +41,23 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 17,
+      "x": 19,
       "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
-    },
-    {
-      "type": "sign",
-      "x": 15,
-      "y": 12,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "Resort_Ini_Casa"
     },
     {
       "type": "sign",
       "x": 12,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NULL"
+    },
+    {
+      "type": "sign",
+      "x": 14,
       "y": 13,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -65,7 +65,7 @@
     },
     {
       "type": "sign",
-      "x": 19,
+      "x": 21,
       "y": 17,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -73,7 +73,7 @@
     },
     {
       "type": "sign",
-      "x": 5,
+      "x": 7,
       "y": 19,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -81,7 +81,7 @@
     },
     {
       "type": "sign",
-      "x": 20,
+      "x": 22,
       "y": 20,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",

@@ -2374,10 +2374,10 @@
     {
       "id": "LAYOUT_INSIDE_OF_TRUCK",
       "name": "InsideOfTruck_Layout",
-      "width": 5,
-      "height": 5,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_InsideOfTruck",
+      "width": 12,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/InsideOfTruck/border.bin",
       "blockdata_filepath": "data/layouts/InsideOfTruck/map.bin"
     },
@@ -3324,8 +3324,8 @@
     {
       "id": "LAYOUT_TEST",
       "name": "Test_Layout",
-      "width": 30,
-      "height": 30,
+      "width": 36,
+      "height": 32,
       "primary_tileset": "gTileset_resort",
       "secondary_tileset": "gTileset_ranch",
       "border_filepath": "data/layouts/Test/border.bin",
@@ -3344,7 +3344,7 @@
     {
       "id": "LAYOUT_ROUTE_RANCH",
       "name": "RouteRanch_Layout",
-      "width": 20,
+      "width": 28,
       "height": 25,
       "primary_tileset": "gTileset_resort",
       "secondary_tileset": "gTileset_ranch",
