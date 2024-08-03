@@ -6,7 +6,7 @@ Resort_Ini_Town::
 	end
 
 Resort_Ini_Esponjo::
-	msgbox Resort_Ini_Esponjo_Men1, MSGBOX_SIGN
+	msgbox Resort_Ini_Esponjo_Men1, MSGBOX_NPC
 	end	
 	
 Resort_Ini_Casa::
